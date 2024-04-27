@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Santiago Nieto</title>
+
+    <!-- Agrego un icono a la pagina -->
+    <link rel="icon" type="image/x-icon" href="./../assets/img/portfolio-icon.jpg">
+
+    <!-- Link con CSS Bootstrap -->
+    <!-- Nota: Va antes que el link con mi hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link al archivo CSS -->
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header de la pagina -->
+    <!-- El header del index es el unico distinto a todos los demas que estan en ./pages/ -->
+    <header class="header">
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg bs-mod__navbar">
+            <div class="container-fluid">
+                <div class="bs-mod__navbar-img-div me-auto mb-2 mb-lg-0">
+                    <a class="navbar-brand" href="./../index.html">
+                        <img class="bs-mod__navbar-img" src="./../assets/img/avatar-icon.png" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler bs-mod__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bs-mod__toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bs-mod__navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="bs-mod__search-field me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn bs-mod__btn" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #d8e9f0;"></i></button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" aria-current="page" href="./../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./about.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./experience.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link bs-mod__active" href="./skills.html">Competencias</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del header -->
+
+    <!--  Main de la pagina -->
+    <main>
+
+        <!-- Titulo principal de la pagina -->
+        <section>
+            <div class="banner">
+                <img class="banner__img" src="./../assets/img/banner-office.jpg" alt="">
+                <div class="banner__title-div">
+                    <!-- Etiqueta h1 unica para el .html -->
+                    <h1 class="banner__title">Competencias</h1>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="grilla-skills-2x1">
+                <!-- Tarjeta de estudios y certificados -->
+                <div class="studies">
+                    <h2 class="studies__header">
+                        Estudios y certificaciones
+                    </h2>
+
+                    <!-- Estudio/Certficado 1 -->
+                    <div class="study">
+                        <div class="study__number">
+                            <div class="vl"></div>
+                            <h3>1</h3>
+                        </div>
+                        <div class="study__info">
+                            <p class="txt-red txt-bold">Maestría en Inteligencia de Negocios y Explotación de Datos</p>
+                            <p class="txt-white txt-bold">Universidad Siglo 21</p>
+                            <p>La inteligencia de negocios es un factor estratégico orientado a brindar información
+                                oportuna, de valor y cierta para lograr acciones orientadas a diferentes procesos que
+                                van desde el análisis de comportamiento de los consumidores para anticiparnos a sus
+                                requerimientos, a la mejora de promociones o al diseño de nuevos productos, entre otros.
+                                El sólo uso de las redes sociales, aplicaciones, dispositivos interconectados a la red,
+                                van generando datos nuestros de manera incesante. El crecimiento de este volumen de
+                                datos es capturado en diferentes medios dentro de las organizaciones o fuera de ellas,
+                                estos datos correctamente analizados, brindan y transforman la información en
+                                conocimiento para así potenciar y optimizar los procesos de toma de decisión.</p>
+                        </div>
+                    </div>
+
+                    <!-- Estudio/Certficado 2 -->
+                    <div class="study">
+                        <div class="study__number">
+                            <div class="vl"></div>
+                            <h3>2</h3>
+                        </div>
+                        <div class="study__info">
+                            <p class="txt-red txt-bold">Ingeniería electrónica</p>
+                            <p class="txt-white txt-bold">Universidad Tecnológica Nacional - Facultad Regional Córdoba
+                            </p>
+                            <p>La carrera de Ingeniería Electrónica es un campo fascinante que combina principios de la
+                                ingeniería eléctrica con tecnología de vanguardia. Los estudiantes adquieren
+                                conocimientos en diseño, análisis y aplicación de sistemas electrónicos, abarcando desde
+                                dispositivos microscópicos hasta redes de comunicación globales. La carrera se enfoca en
+                                áreas como circuitos electrónicos, control automático, sistemas de comunicación,
+                                robótica y más. Los ingenieros electrónicos desarrollan habilidades en diseño de
+                                hardware y software, resolución de problemas complejos y optimización de sistemas. Esta
+                                disciplina impulsa avances en telecomunicaciones, automoción, tecnología médica y otros
+                                campos, siendo esencial en la era digital actual.</p>
+                        </div>
+                    </div>
+
+                    <!-- Estudio/Certficado 3 -->
+                    <div class="study">
+                        <div class="study__number">
+                            <div class="vl"></div>
+                            <h3>3</h3>
+                        </div>
+                        <div class="study__info">
+                            <p class="txt-red txt-bold">Fundamentos de Inteligencia Artificial</p>
+                            <p class="txt-white txt-bold">CoderHouse</p>
+                            <p>Aprenderás a aplicar herramientas de Inteligencia Artificial.
+                                ya sea para lanzar un proyecto personal como
+                                emprendedor o freelance o bien para iniciar un proceso de
+                                cambio dentro de tu área de negocio u organización. A lo
+                                largo del programa vamos a cubrir fundamentalmente
+                                herramientas de Generative AI.</p>
+                        </div>
+                    </div>
+
+                    <!-- Estudio/Certficado 4 -->
+                    <div class="study">
+                        <div class="study__number">
+                            <h3>4</h3>
+                        </div>
+                        <div class="study__info">
+                            <p class="txt-red txt-bold">Machine Learning con Python</p>
+                            <p class="txt-white txt-bold">Udemy</p>
+                            <p>
+                                El curso de Machine Learning con Python ofrece una introducción práctica al aprendizaje
+                                automático utilizando el lenguaje de programación Python y sus bibliotecas
+                                especializadas como TensorFlow y Scikit-Learn. Los estudiantes aprenden a implementar
+                                algoritmos de aprendizaje supervisado y no supervisado para clasificación, regresión y
+                                clustering. Se cubren temas fundamentales como preprocesamiento de datos, selección de
+                                características, evaluación de modelos y optimización de hiperparámetros. El curso
+                                incluye proyectos prácticos donde los alumnos aplican técnicas de aprendizaje automático
+                                para resolver problemas del mundo real, lo que les proporciona las habilidades
+                                necesarias para desarrollar soluciones innovadoras en el campo de la inteligencia
+                                artificial.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de competencias -->
+                <div class="skills">
+
+                    <!-- Encabezado de tarjeta -->
+                    <h2 class="skills__header">
+                        Competencias
+                    </h2>
+
+                    <!-- Cada competencia consta de: -->
+                    <!-- 1. Un titulo o label -->
+                    <!-- 2. Una barra de progreso indicativa del nivel de expertiz -->
+
+                    <!-- Competencia 1 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>C/C++</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l90">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 2 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Python</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l80">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 3 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Git</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l70">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 4 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Matlab</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l80">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 5 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>SQL</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l60">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 6 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Power BI</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 7 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Javascript</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l40">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 8 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Node JS</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l30">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 9 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l60">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 10 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l80">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 11 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 12 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Microsoft Office</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l70">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 13 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>VHDL</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l60">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 14 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Verilog</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencia 15 -->
+                    <div class="skill txt-center">
+                        <div class="skill__name">
+                            <h3>Assembler</h3>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__bar--fill l30">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Elemento de posicion fija de contacto -->
+        <div class="whatsapp-fixed">
+            <a href="https://api.whatsapp.com/send/?phone=3512647957&text&type=phone_number&app_absent=0"
+                target="_blank"><img src="./../assets/img/whatsapp-logo.png" alt="Contacto con WhatsApp"></a>
+        </div>
+    </main>
+    <!-- Fin del main -->
+
+    <!-- Footer de la pagina -->
+    <footer>
+        <footer>
+            <!-- Barra que contiene los links a mis redes sociales -->
+            <div class="social-bar">
+                <!-- Lista de la barra -->
+                <ul class="social-bar__list">
+                    <!-- Link a Facebook -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.facebook.com/santy.nieto.7/" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/facebook-logo-png.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a Instagram -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.instagram.com/_santinieto/" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/instagram-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a GitHub -->
+                    <li class="social-bar__list__item">
+                        <a href="https://github.com/santinieto" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/github-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a LinkedIn -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.linkedin.com/in/santiago-nieto-29b43a10a/" class="social-bar__list__item__link"
+                            target="_blank">
+                            <img src="./../assets/img/linkedin-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Fin del footer de la pagina -->
+
+        <!-- Script de Bootstrap -->
+        <!-- Nos va a dar la funcionalidad a las cosas -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <!-- Link para usar iconos de Fontawesome -->
+        <script src="https://kit.fontawesome.com/8108aa3dd1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

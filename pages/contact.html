@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Santiago Nieto</title>
+
+    <!-- Agrego un icono a la pagina -->
+    <link rel="icon" type="image/x-icon" href="./../assets/img/portfolio-icon.jpg">
+
+    <!-- Link con CSS Bootstrap -->
+    <!-- Nota: Va antes que el link con mi hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link al archivo CSS -->
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header de la pagina -->
+    <!-- El header del index es el unico distinto a todos los demas que estan en ./pages/ -->
+    <header class="header">
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg bs-mod__navbar">
+            <div class="container-fluid">
+                <div class="bs-mod__navbar-img-div me-auto mb-2 mb-lg-0">
+                    <a class="navbar-brand" href="./../index.html">
+                        <img class="bs-mod__navbar-img" src="./../assets/img/avatar-icon.png" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler bs-mod__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bs-mod__toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bs-mod__navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="bs-mod__search-field me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn bs-mod__btn" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #d8e9f0;"></i></button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" aria-current="page" href="./../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./about.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./experience.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./skills.html">Competencias</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link bs-mod__active" href="./contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del header -->
+
+    <!--  Main de la pagina -->
+    <main class="main">
+
+        <!-- Titulo principal de la pagina -->
+        <section>
+            <div class="banner">
+                <img class="banner__img" src="./../assets/img/banner-office.jpg" alt="">
+                <div class="banner__title-div">
+                    <!-- Etiqueta h1 unica para el .html -->
+                    <h1 class="banner__title">Contacto</h1>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <!-- Contenedo principal -->
+            <div class="grilla-contact-2x1">
+
+                <!-- Tarjeta del formulario de contacto -->
+                <div class="contact__form">
+                    <!-- Encabezado de la tarjeta -->
+                    <h2 class="card-header">Contact <span class="txt-red">Me</span></h2>
+
+                    <!-- Formulario de contacto -->
+                    <form action="" class="form">
+                        <!-- Campo: Nombre -->
+                        <div class="form__field">
+                            <label for="name" class="form-label txt-white">Nombre</label>
+                            <input type="text" name="name" id="name" class="form__field--text txt-white"
+                                placeholder="Nombre completo" required>
+                        </div>
+                        <!-- Campo: Correo electronico -->
+                        <div class="form__field">
+                            <label for="email" class="form-label txt-white">Correo electrónico</label>
+                            <input type="email" name="email" id="email" class="form__field--text txt-white"
+                                placeholder="example@domain.com" required>
+                        </div>
+                        <!-- Campo: Edad -->
+                        <div class="form__field">
+                            <label for="age" class="form-label txt-white">Edad</label>
+                            <input type="number" name="age" id="age" class="form__field--text txt-white"
+                                placeholder="99">
+                        </div>
+                        <!-- Campo: Telefono -->
+                        <div class="form__field">
+                            <label for="phone" class="form-label txt-white">Teléfono</label>
+                            <input type="tel" name="phone" id="phone" class="form__field--text txt-white"
+                                placeholder="11111111">
+                        </div>
+                        <!-- Campo: Espacio para el mensaje -->
+                        <div class="form__field">
+                            <label for="message" class="form-label txt-white">Mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                class="form__field--textarea txt-white" placeholder="Escriba su mensaje aqui"
+                                required></textarea>
+                        </div>
+                        <!-- Campo: Terminos y condiciones -->
+                        <div class="form__field txt-right">
+                            <input type="checkbox" name="terms" id="terms" required>
+                            <label for="terms" class="form-label-check txt-white">Acepto los términos y
+                                condiciones</label>
+                            <input type="checkbox" name="privacy-pol" id="privacy-pol" required>
+                            <label for="privacy-pol" class="form-label-check txt-white">Acepto el acuerdo de
+                                privacidad</label>
+                        </div>
+                        <!-- Boton de enviar o submit -->
+                        <div class="form__field">
+                            <input type="submit" value="Enviar" class="form__field--submit-btn txt-white">
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Tarjeta de mas informacion -->
+                <div class="contact__info">
+                    <!-- Encabezado de la tarjeta -->
+                    <h2 class="contact__info__header">Más información</h2>
+                    <!-- Texto para mas informacion -->
+                    <p class="contact__info__data">¡Gracias por visitar mi portfolio! Estoy ubicado en la hermosa ciudad
+                        de Córdoba, Argentina, una ciudad rica en cultura, historia y belleza natural. Córdoba se
+                        encuentra en la zona horaria GMT-3 (hora estándar de Argentina) durante todo el año, lo que
+                        significa que estamos en el horario de Argentina (ART).</p>
+                    <p class="contact__info__data">Córdoba es conocida por su encanto colonial, reflejado en sus
+                        edificios históricos y sus calles empedradas. Como una de las ciudades más grandes de Argentina,
+                        Córdoba es también un importante centro educativo y cultural, albergando numerosas universidades
+                        y atracciones culturales.</p>
+                    <p class="contact__info__data">En términos de clima, Córdoba tiene un clima templado con veranos
+                        cálidos e inviernos suaves, lo que lo convierte en un destino agradable durante todo el año. La
+                        ciudad ofrece una combinación única de naturaleza y urbanismo, con las impresionantes Sierras de
+                        Córdoba a poca distancia, ideales para actividades al aire libre como senderismo, trekking y
+                        exploración.</p>
+                    <p class="contact__info__data">Además de su rica historia y entorno natural, Córdoba es conocida por
+                        su hospitalidad y ambiente acogedor. Los cordobeses son amables y cálidos, lo que hace que vivir
+                        y trabajar en esta ciudad sea una experiencia enriquecedora.</p>
+                    <p class="contact__info__data">Si tienes alguna pregunta adicional sobre Córdoba, Argentina, mi zona
+                        horaria o cualquier otra información que te gustaría saber, no dudes en contactarme a través de
+                        este formulario. Estoy aquí para ayudarte y compartir más sobre esta maravillosa ciudad que
+                        llamo hogar.</p>
+                    <p class="contact__info__data">¡Espero tener noticias tuyas pronto y poder compartir más sobre mi
+                        experiencia y trabajo contigo!</p>
+
+                    <!-- Barra que contiene los links a mis redes sociales -->
+                    <div class="social-bar">
+                        <!-- Lista de la barra -->
+                        <ul class="social-bar__list">
+                            <!-- Link a Facebook -->
+                            <li class="social-bar__list__item">
+                                <a href="https://www.facebook.com/santy.nieto.7/" class="social-bar__list__item__link" target="_blank">
+                                    <img src="./../assets/img/facebook-logo-png.png" alt="" class="social-bar__list__item__link__icon">
+                                </a>
+                            </li>
+                            <!-- Link a Instagram -->
+                            <li class="social-bar__list__item">
+                                <a href="https://www.instagram.com/_santinieto/" class="social-bar__list__item__link" target="_blank">
+                                    <img src="./../assets/img/instagram-logo.png" alt="" class="social-bar__list__item__link__icon">
+                                </a>
+                            </li>
+                            <!-- Link a GitHub -->
+                            <li class="social-bar__list__item">
+                                <a href="https://github.com/santinieto" class="social-bar__list__item__link" target="_blank">
+                                    <img src="./../assets/img/github-logo.png" alt="" class="social-bar__list__item__link__icon">
+                                </a>
+                            </li>
+                            <!-- Link a LinkedIn -->
+                            <li class="social-bar__list__item">
+                                <a href="https://www.linkedin.com/in/santiago-nieto-29b43a10a/" class="social-bar__list__item__link"
+                                    target="_blank">
+                                    <img src="./../assets/img/linkedin-logo.png" alt="" class="social-bar__list__item__link__icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Elemento de posicion fija de contacto -->
+        <div class="whatsapp-fixed">
+            <a href="https://api.whatsapp.com/send/?phone=3512647957&text&type=phone_number&app_absent=0"
+                target="_blank"><img src="./../assets/img/whatsapp-logo.png" alt="Contacto con WhatsApp"></a>
+        </div>
+    </main>
+    <!-- Fin del main -->
+
+    <!-- Footer de la pagina -->
+    <footer>
+        <footer>
+            <!-- Barra que contiene los links a mis redes sociales -->
+            <div class="social-bar">
+                <!-- Lista de la barra -->
+                <ul class="social-bar__list">
+                    <!-- Link a Facebook -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.facebook.com/santy.nieto.7/" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/facebook-logo-png.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a Instagram -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.instagram.com/_santinieto/" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/instagram-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a GitHub -->
+                    <li class="social-bar__list__item">
+                        <a href="https://github.com/santinieto" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/github-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a LinkedIn -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.linkedin.com/in/santiago-nieto-29b43a10a/" class="social-bar__list__item__link"
+                            target="_blank">
+                            <img src="./../assets/img/linkedin-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Fin del footer de la pagina -->
+
+        <!-- Script de Bootstrap -->
+        <!-- Nos va a dar la funcionalidad a las cosas -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <!-- Link para usar iconos de Fontawesome -->
+        <script src="https://kit.fontawesome.com/8108aa3dd1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

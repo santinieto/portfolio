@@ -1,0 +1,981 @@
+/***************************************************************************/
+/* FUENTES */
+/***************************************************************************/
+@font-face {
+    font-family: Balleny;
+    src: url(./../assets/fonts/Balleny.otf);
+}
+
+@font-face {
+    font-family: Mont-Heavy;
+    src: url(./../assets/fonts/Mont-HeavyDEMO.otf);
+}
+
+@font-face {
+    font-family: Mont-ExtraLight;
+    src: url(./../assets/fonts/Mont-ExtraLightDEMO.otf);
+}
+
+/***************************************************************************/
+/* CONFIGURACION UNIVERSAL */
+/***************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/***************************************************************************/
+/* PALETA DE COLORES */
+/***************************************************************************/
+:root {
+    --white: #d8e9f0; /* rgb(216, 233, 240) */
+    --gray: #33425b; /* rgb(51, 66, 91) */
+    --red: #f33535; /* rgb(243, 53, 53) */
+    --black: #29252c; /* rgb(41, 37, 44) */
+}
+
+/***************************************************************************/
+/* CLASES GENERALES */
+/* Tienen como objetivo dar configuraciones rapidas a los elementos HTML */
+/***************************************************************************/
+/* Color */
+.txt-white { color: var(--white); }
+.txt-red { color: var(--red); }
+.txt-gray { color: var(--gray); }
+.txt-black { color: var(--black); }
+
+/* Configuracion de texto */
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+.txt-bold { font-weight: bold; }
+
+/* Ajuste de ancho para los div */
+.l10 { width: 10%; }
+.l20 { width: 20%; }
+.l30 { width: 30%; }
+.l35 { width: 35%; }
+.l40 { width: 40%; }
+.l45 { width: 45%; }
+.l50 { width: 50%; }
+.l55 { width: 55%; }
+.l60 { width: 60%; }
+.l65 { width: 65%; }
+.l70 { width: 70%; }
+.l80 { width: 80%; }
+.l90 { width: 90%; }
+.l100 { width: 100%; }
+
+/* Tarjetas basicas */
+.card-header {
+    text-align: center;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: var(--white);
+}
+
+.card-block,
+.card-inline {
+    background-color: var(--black);
+    padding: 30px;
+    margin: 0 20px;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card-inline {
+    display: inline-block;
+}
+
+/***************************************************************************/
+/* HEADER (Para todos los HTML) */
+/* bs-mod hace referencia a que son clases modificadoras de Bootstrap */
+/* bs-mod: Bootstrap Modify */
+/***************************************************************************/
+.bs-mod__navbar {
+    background-color: var(--black);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px 20px;
+}
+
+.bs-mod__navbar-img-div a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.bs-mod__navbar-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--red);
+}
+
+.bs-mod__search-field {
+    background-color: var(--black);
+    border: none;
+    border-bottom: 2px solid var(--red);
+    border-radius: 0px;
+    color: var(--white);
+    transition: none;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.bs-mod__search-field:focus {
+    outline: none;
+}
+
+.bs-mod__toggler {
+    border: 2px solid var(--red);
+}
+
+.bs-mod__toggler:focus {
+    border: 2px solid var(--red);
+    outline: none;
+}
+
+.bs-mod__navbar-collapse {
+    flex-grow: 0;
+}
+
+.bs-mod__toggler-icon {
+    background-image: url(./../assets/svg/menu-expand-svgrepo-com.svg);
+}
+
+.bs-mod__navbar-collapse form {
+    margin-right: 20px;
+}
+
+.bs-mod__btn {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.bs-mod__btn:hover {
+    border-color: var(--red);
+    background-color: var(--red);
+}
+
+.bs-mod__active {
+    color: var(--white);
+    text-shadow: 0px 0px 17px var(--white);
+}
+
+.bs-mod__nav-link {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.bs-mod__nav-link:visited {
+    color: white;
+}
+
+.bs-mod__nav-link:hover {
+    border-bottom: 2px solid var(--red);
+    font-size: 1em;
+    text-shadow: 0px 0px 17px var(--white);
+}
+
+/***************************************************************************/
+/* BACKGROUND PARA EL BODY */
+/***************************************************************************/
+body {
+    background-image: url(./../assets/img/background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/***************************************************************************/
+/* BANNER PARA LAS PAGINAS */
+/***************************************************************************/
+.banner {
+    padding: 15px 0px;
+    margin: 0px 40px;
+    height: 100px;
+    position: relative;
+}
+
+.banner__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px var(--white);
+}
+
+.banner__title-div {
+    color: var(--white);
+    position: absolute;
+    top: 25px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* El banner de las paginas va a contener la etiqueta h1 */
+/* La tiqueta h1 es unica por archivo html */
+.banner__title {
+    font-size: 40px;
+    color: var(--white);
+    text-shadow: var(--red) 1px 0 20px;
+    font-family: 'Mont-Heavy';
+}
+
+/***************************************************************************/
+/* MAIN - INDEX */
+/***************************************************************************/
+/* Configuro la unica card que hay para que quede al centro de la pantalla */
+.index__image__div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.index__image {
+    width: 550px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px var(--red);
+    object-fit: cover;
+}
+
+.index__header,
+.index__header--left {
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.index__header--left {
+    text-align: left;
+}
+
+.index__paragraph,
+.index__paragraph--center {
+    margin: 15px 0px;
+    text-align: left;
+}
+
+.index__paragraph--center {
+    text-align: center;
+}
+
+.bs-mod__container {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin: 10px 30px;
+    width: auto;
+}
+
+/* Clase para modificar Bootstrap */
+.bs-mod__container p {
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+/***************************************************************************/
+/* MAIN - ABOUT */
+/***************************************************************************/
+.grilla-about-2x2 {
+    padding: 0px 40px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.card-about-1,
+.card-about-2,
+.card-about-3,
+.card-about-4 {
+    background-color: var(--black);
+    padding: 30px;
+    margin: 0px 0px;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card-about-1 h2,
+.card-about-2 h2,
+.card-about-3 h2,
+.card-about-4 h2 {
+    height: 5%;
+}
+
+.card-about__header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-about--flex {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-about__subtitle {
+    text-align: left;
+}
+
+.card-about__paragraph {
+    margin-bottom: 20px;
+}
+
+/* Le doy un formato a los bordes de los iframe */
+.youtube-video,
+.google-map {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px var(--white);
+    display: inline-block;
+    width: 100%;
+}
+
+/***************************************************************************/
+/* MAIN - PORTFOLIO */
+/***************************************************************************/
+.project {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Con inline-block la imagen me queda al lado de los datos */
+.project__img {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+/* Fijo el tamaño de las imagenes para que queden todas iguales */
+.project__img img {
+    width: 100%;
+    height: 90%;
+    margin-top: 30px;
+    border: 3px solid var(--red);
+    border-radius: 30px;
+    background-color: black;
+}
+
+/* Con inline-block la imagen me queda al lado de los datos */
+.project__data {
+    background-color: var(--black);
+    display: inline-block;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 30px;
+    width: 72.5%;
+}
+
+/* En particular para estas tarjetas fuerzo que el titulo se alinie
+** al comienzo (izquierda para occidentales)
+**/
+.project__data__header {
+    text-align: start;
+    color: var(--white);
+}
+
+/* En particular para estas tarjetas fuerzo que el texto se alinie
+** al comienzo (izquierda para occidentales)
+**/
+.project__data__info {
+    text-align: start;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Los botones quiero que queden a la derecha */
+.project__data__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+/* Le doy estilo a los botones */
+.project__data__btns a {
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    border: 2px solid var(--red);
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-left: 5px;
+    width: 50%;
+}
+
+/***************************************************************************/
+/* MAIN - EXPERIENCE */
+/***************************************************************************/
+.work-exp-description {
+    background-color: var(--black);
+    padding: 30px;
+    margin: 0px 10px;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+
+.work-exp-description_header--red {
+    margin-bottom: 20px;
+    color: var(--red);
+}
+
+/* Las tarjetas de experiencias laborales van a quedar al lado de
+** la informacion */
+.work-exp-div {
+    display: inline-block;
+    overflow: hidden;
+    width: 66%;
+}
+
+/* Le doy formato a cada tarjeta de experiencia */
+.work-exp-card {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.work-exp-card__img-div {
+    background-color: var(--black);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 10px;
+    padding: 40px 0px;
+}
+
+.work-exp-card-img__img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--red);
+    border-radius: 30px;
+    background-color: black;
+}
+
+.work-exp-card__data {
+    display: inline-block;
+    padding: 40px 20px;
+    width: 80%;
+}
+
+.work-exp-card__data__header{
+    padding: 0px 20px;
+    text-align: start;
+}
+
+.work-exp-card__data__dates {
+    text-align: start;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+/* Alineo los elementos de la lista a la izquierda */
+/* Con el padding, los bullets comienzan en la misma linea que el texto */
+.work-exp-card__data__tasks{
+    margin-top: 10px;
+    padding: 0px 20px;
+    text-align: start;
+}
+
+.work-exp-card__data__tasks_list {
+    padding: 0px 20px;
+}
+
+/* Quiero que el boton de contacto me quede a la derecha */
+.work-exp-card__data__contact{
+    text-align: end;
+    margin: 20px 0px 0px 0px;
+}
+
+/* Le doy un formato al boton de contacto */
+.work-exp-card__data__contact__btn {
+    color: var(--white);
+    background-color: var(--red);
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid var(--red);
+}
+
+/***************************************************************************/
+/* MAIN - SKILLS */
+/***************************************************************************/
+.grilla-skills-2x1 {
+    padding: 0 30px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    
+}
+
+.studies,
+.skills {
+    background-color: var(--black);
+    padding: 20px 50px;
+    /* margin: 0px 10px; */
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.studies__header,
+.skills__header {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.study{
+    display: flex;
+    justify-content: space-between;
+} 
+
+/* La informacion de cada estudio o certificado se muestra al lado
+** del circulo con numero.
+** Al div del numero le doy posicion relativa para poder agregar la
+** linea vertical
+**/
+.study__number {
+    position: relative;
+}
+
+.study__number h3 {
+    background-color: var(--red);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* La linea vertical tiene posicion absoluta al medio de los circulos
+** con los numeros.
+**/
+.vl {
+    border-left: 5px solid var(--red);
+    height: 98%;
+    position: absolute;
+    top: 50px;
+    left: 22px;
+}
+
+/* La informacion de cada estudio o certificado se muestra al lado del
+** circulo con numero.
+**/
+.study__info {
+    text-align: start;
+    color: var(--white);
+    padding: 0px 15px;
+}
+
+.study__info p {
+    margin: 10px 0px;
+}
+
+/* La etiqueta y barra de cada skill ocupan el 100% del contenedor que
+** las aloja.
+**/
+.skill {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* La etique sale al lado de la barra de skill */
+.skill__name {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* La etique sale al lado de la barra de skill */
+.skill__bar {
+    display: inline-block;
+    width: 70%;
+    border-top: none;
+    border-bottom: 2px solid var(--white);
+    border-left: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+}
+
+/* Le doy una altura minima a la barra llena de skill para que se
+** muestre en pantalla.
+** Si no pongo un min-height la barra no se muestra porque el div no
+** tiene contenido.
+**/
+.skill__bar--fill{
+    background-color: var(--red);
+    min-height: 10px;
+}
+
+/***************************************************************************/
+/* MAIN - CONTACT */
+/***************************************************************************/
+.grilla-contact-2x1 {
+    padding: 0px 40px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "contact-form contact-form contact-info contact-info contact-info"
+    ;
+    column-gap: 25px;
+    row-gap: 10px;
+    
+}
+
+.contact__form,
+.contact__info {
+    background-color: var(--black);
+    padding: 20px 50px;
+    margin: 0px 0px;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form {
+    grid-area: contact-form;
+}
+
+.contact__form form {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact__info {
+    grid-area: contact-info;
+}
+
+/* Contenedor principal del formulario de contacto */
+.form {
+    padding: 0px;
+    width: 100%;
+    color: var(--white);
+}
+
+.form__field {
+    background-color: var(--black);
+    margin: 10px 0px 0px 0px;
+    padding-top: 10px;
+}
+
+.form-label-check {
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin: 0px 15px 0px 0px;
+}
+
+/* Con display block logro que las etiquetas aparezcan en un renglon separado */
+.form-label {
+    text-align: start;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin: 10px 0px;
+    color: var(--white);
+}
+
+/* Defino configuraciones generales para todos los campos de texo */
+.form__field--text {
+    background-color: var(--black);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid var(--red);
+    outline: none;
+    color: var(--white);
+}
+
+.form__field--textarea {
+    background-color: var(--black);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid var(--red);
+    outline: none;
+    color: var(--white);
+}
+
+/* Le doy estilo al boton de submit */
+.form__field--submit-btn {
+    background-color: var(--red);
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 2px solid var(--red);
+    border-radius: 15px;
+}
+
+/* Condfiguro lo que sucede en el boton cuando paso el cursor por encima */
+.form__field--submit-btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px var(--gray);
+}
+
+.contact__info__header {
+    text-align: left;
+}
+
+.contact__info__data {
+    margin: 20px 0px;
+    text-align: left;
+    color: var(--white); /* Defino el color del texto */
+}
+
+/***************************************************************************/
+/* BOTON DE CONTACTO DE POSICION FIJA */
+/***************************************************************************/
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.whatsapp-fixed img {
+    width: 60px;
+}
+
+/***************************************************************************/
+/* FOOTER */
+/***************************************************************************/
+footer {
+    background-color: var(--black); /* Defino un color para el fondo */
+    margin: 0; /* El header no tiene division con el borde de pantalla */
+    padding: 0; /* Los elementos dentro del header no tienen espaciado */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+}
+
+/* Barra con los iconos de redes sociales */
+/* La uso tanto en el footer como en Index - Contact */
+.social-bar {
+    padding: 5px 0px;
+}
+
+.social-bar__list {
+    padding: 5px 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.social-bar__list__item {
+    margin: 0px 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.social-bar__list__item__link {
+    text-decoration: none;
+}
+
+.social-bar__list__item__link__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+}
+
+/***************************************************************************/
+/* Media Query Tablet --> 768px - 1023px */
+/***************************************************************************/
+@media (max-width: 1023px) {
+    /* MAIN - ABOUT */
+    .grilla-about-2x2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    /* MAIN - PORTFOLIO */
+    .project__data {
+        width: 90%;
+    }
+    /* MAIN - EXPERIENCE */
+    .work-exp-description {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .work-exp-div {
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .work-exp-card {
+        padding: 0;
+    }
+    .work-exp-card__data {
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .work-exp-card__data__contact {
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: 30px auto;
+    }
+    .work-exp-card__data__contact__btn {
+        width: 100%;
+    }
+    /* MAIN - SKILLS */
+    .grilla-skills-2x1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* MAIN - CONTACT */
+    .grilla-contact-2x1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "contact-form" "contact-info"
+        ;
+    }
+    .skill__name h3 {
+        font-size: 20px;
+    }
+    .skill__bar {
+        width: 65%;
+    }
+}
+
+/***************************************************************************/
+/* Media Query Mobile --> 320px - 767px */
+/***************************************************************************/
+@media (max-width: 767px) {
+    /* MAIN - INDEX */
+    .index__image {
+        width: 65vw;
+    }
+    .index__header,
+    .index__paragraph {
+        text-align: center;
+    }
+    /* MAIN - PORTFOLIO */
+    .project__img {
+        width: 50%;
+        height: 50%;
+    }
+    .project__data {
+        width: 90%;
+        margin: 0;
+    }
+    .project__data__btns {
+        flex-direction: column;
+    }
+    .project__data__btns a {
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+        width: 100%;
+    }
+}
+
+/***************************************************************************/
+/* Media Query especifica para Bootstrap */
+/***************************************************************************/
+@media (max-width: 991px) {
+    .bs-mod__navbar {
+        /* padding-left: 0px;
+        padding-right: 0px; */
+        z-index: 1;
+    }
+    .bs-mod__navbar-collapse {
+        text-align: center;
+        position: absolute;
+        background-color: var(--black);
+        width: 100%;
+        top: 75px;
+        left: 0px; 
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .bs-mod__navbar-collapse form {
+        margin: 30px auto;
+        width: 50%;
+    }
+    .bs-mod__nav-link:hover {
+        border-bottom: none;
+    }
+}
+
+/***************************************************************************/
+/* Media queries especiales de uso especifico */
+/***************************************************************************/
+@media (max-width: 1300px) {
+    .skill__name {
+        width: 100%;
+        text-align: center;
+    }
+    .skill__bar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    /* BANNER */
+    .banner__title-div {
+        top: 35px;
+    }
+    .banner__title {
+        font-size: 27px;
+    }
+    /* MAIN - INDEX */
+    .index__image {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 250px) {
+    /* MAIN - INDEX */
+    .index__image {
+        width: 50vw;
+    }
+    .index__header {
+        font-size: 1.2em;
+    }
+}

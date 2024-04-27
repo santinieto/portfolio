@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Santiago Nieto</title>
+
+    <!-- Agrego un icono a la pagina -->
+    <link rel="icon" type="image/x-icon" href="./../assets/img/portfolio-icon.jpg">
+
+    <!-- Link con CSS Bootstrap -->
+    <!-- Nota: Va antes que el link con mi hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link al archivo CSS -->
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header de la pagina -->
+    <!-- El header del index es el unico distinto a todos los demas que estan en ./pages/ -->
+    <header class="header">
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg bs-mod__navbar">
+            <div class="container-fluid">
+                <div class="bs-mod__navbar-img-div me-auto mb-2 mb-lg-0">
+                    <a class="navbar-brand" href="./../index.html">
+                        <img class="bs-mod__navbar-img" src="./../assets/img/avatar-icon.png" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler bs-mod__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bs-mod__toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bs-mod__navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="bs-mod__search-field me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn bs-mod__btn" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #d8e9f0;"></i></button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" aria-current="page" href="./../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link bs-mod__active" href="./about.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./experience.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./skills.html">Competencias</a>
+                        </li>
+                        <li class="nav-item bs-mod__nav-item">
+                            <a class="nav-link bs-mod__nav-link" href="./contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del header -->
+
+    <!--  Main de la pagina -->
+    <main>
+
+        <!-- Titulo principal de la pagina -->
+        <section>
+            <div class="banner">
+                <img class="banner__img" src="./../assets/img/banner-office.jpg" alt="">
+                <div class="banner__title-div">
+                    <!-- Etiqueta h1 unica para el .html -->
+                    <h1 class="banner__title">Sobre mi</h1>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grilla-about-2x2">
+                <!-- Cada tarjeta consta de: -->
+                <!-- 1. Un titulo -->
+                <!-- 2. Contenido variable de tarjeta a tarjeta -->
+
+                <!-- Tarjeta izquierda -->
+                <!-- Hago uso del ifram de YouTube -->
+                <div class="card-about-1">
+                    <h2 class="card-about__header">Mi <span class="txt-red">Perfil</span></h2>
+                    <div class="card-about--flex">
+                        <p class="card-about__paragraph">Me considero una persona competente, responsable y organizada,
+                            capaz de trabajar tanto en equipo como de manera independiente, con humildad, respeto y un
+                            fuerte sentido de compromiso. Disfruto explorando nuevas técnicas y nunca dejo de aprender,
+                            que es mi lema de vida. Mi objetivo es utilizar mis conocimientos adquiridos con
+                            responsabilidad, compromiso y disposición para desarrollar óptimamente las tareas asignadas
+                            y adquirir nuevas experiencias.</p>
+                        <p class="card-about__paragraph">Además, aspiro a asumir roles de liderazgo en el futuro y guiar
+                            a mi equipo hacia el éxito. Sin embargo, no solo me interesa mi propio desarrollo
+                            profesional, sino también el de todos los que me rodean. Creo que apoyar y alentar a otros a
+                            crecer profesionalmente es crucial para lograr el éxito como equipo.</p>
+                        <iframe width="560" height="560"
+                            src="https://www.youtube.com/embed/T_fOnIbqc94?si=Dnu3X8dOL4fICZ3a"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            class="youtube-video"></iframe>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta derecha -->
+                <!-- Informacion sobre los iframes -->
+                <div class="card-about-2">
+                    <h2 class="card-about__header">Integración de <span class="txt-red">iframes</span> en mi Portafolio
+                    </h2>
+                    <div class="card-about--flex">
+                        <p class="card-about__paragraph">En mi portafolio, empleo la funcionalidad de iframes de manera
+                            estratégica para mostrar y compartir información relevante sobre mis proyectos y
+                            habilidades. Dos de las herramientas clave que utilizo son los iframes de YouTube y Google
+                            Maps.</p>
+
+                        <h3 class="card-about__subtitle">Integración de <span class="txt-red">YouTube</span></h3>
+                        <p class="card-about__paragraph">Utilizo iframes de YouTube para incorporar videos informativos
+                            y demostrativos relacionados con mis proyectos y habilidades técnicas. Al incrustar videos
+                            directamente en mi portafolio, proporciono a los visitantes una experiencia interactiva que
+                            les permite visualizar mis trabajos y aprendizajes de una manera dinámica.</p>
+
+                        <p class="card-about__paragraph">Por ejemplo, he creado tutoriales en video donde explico
+                            conceptos técnicos, comparto demos de proyectos destacados o presento testimonios sobre mi
+                            trabajo. Esta integración me permite resaltar mi capacidad para comunicar ideas complejas de
+                            manera efectiva a través de medios visuales.</p>
+
+                        <h3 class="card-about__subtitle">Integración de <span class="txt-red">Google Maps</span></h3>
+                        <p class="card-about__paragraph">Además, utilizo iframes de Google Maps para mostrar ubicaciones
+                            relevantes relacionadas con mis proyectos o actividades. Al incrustar mapas interactivos en
+                            mi portafolio, puedo destacar dónde he trabajado, vivido o realizado proyectos
+                            significativos.</p>
+
+                        <p class="card-about__paragraph">Por ejemplo, puedo mostrar la ubicación de un lugar donde
+                            desarrollé un proyecto específico, destacar áreas geográficas de especial interés o resaltar
+                            lugares que han influido en mi trabajo y trayectoria profesional. Esta integración demuestra
+                            mi capacidad para contextualizar proyectos dentro de su entorno geográfico y promover mi
+                            experiencia en diversas ubicaciones.</p>
+
+                        <p class="card-about__paragraph">En conjunto, la integración de iframes de YouTube y Google Maps
+                            en mi portafolio no solo mejora la presentación visual de mi trabajo, sino que también
+                            refleja mi habilidad para utilizar herramientas tecnológicas de manera efectiva para
+                            comunicar ideas y mostrar mi experiencia de manera más completa.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta izquierda -->
+                <!-- Informacion sobre Cordoba -->
+                <div class="card-about-3">
+                    <h2 class="card-about__header">Descubriendo <span class="txt-red">Córdoba, Argentina</span></h2>
+                    <div class="card-about--flex">
+                        <p class="card-about__paragraph">Bienvenido a Córdoba, una ciudad llena de historia, cultura y
+                            belleza natural en el corazón de Argentina. Situada en la región central del país, Córdoba
+                            es la segunda ciudad más grande de Argentina y una joya que combina encanto colonial con una
+                            vibrante vida contemporánea.</p>
+
+                        <h3 class="card-about__subtitle">Historia y Patrimonio</h3>
+                        <p class="card-about__paragraph">Córdoba es una ciudad con raíces profundas que se remontan a la
+                            época colonial española. Fundada en 1573, su casco histórico conserva impresionantes
+                            monumentos y arquitectura de la era colonial, como la Manzana Jesuítica, declarada
+                            Patrimonio de la Humanidad por la UNESCO. Aquí, las antiguas iglesias, como la Iglesia de la
+                            Compañía de Jesús y la Catedral de Córdoba, revelan la rica historia religiosa y cultural de
+                            la ciudad.</p>
+
+                        <h3 class="card-about__subtitle">Vida Cultural y Educación</h3>
+                        <p class="card-about__paragraph">Córdoba es conocida como la "ciudad de las campanas" debido a
+                            sus numerosas iglesias y conventos. Además de su herencia histórica, la ciudad alberga una
+                            comunidad cultural vibrante. Es el centro universitario más importante de Argentina, con
+                            instituciones educativas renombradas como la Universidad Nacional de Córdoba, una de las más
+                            antiguas de América Latina. Esta influencia estudiantil aporta energía y dinamismo a la vida
+                            cultural de la ciudad, con festivales, eventos artísticos y una escena gastronómica diversa.
+                        </p>
+
+                        <h3 class="card-about__subtitle">Naturaleza y Entorno</h3>
+                        <p class="card-about__paragraph">Rodeada de sierras y valles, Córdoba ofrece un impresionante
+                            paisaje natural. A poca distancia de la ciudad, se encuentran las Sierras de Córdoba, un
+                            paraíso para los amantes del aire libre. Aquí puedes explorar senderos de montaña, cascadas,
+                            lagos y reservas naturales que ofrecen oportunidades para practicar senderismo, escalada,
+                            pesca y más.</p>
+
+                        <h3 class="card-about__subtitle">Gastronomía y Tradiciones</h3>
+                        <p class="card-about__paragraph">La cocina cordobesa es una fusión de influencias españolas e
+                            indígenas. Los platos tradicionales como el locro, las empanadas y el asado son
+                            imprescindibles para probar. La ciudad también es conocida por su vida nocturna, con bares y
+                            boliches que ofrecen música en vivo, tango y folklore argentino.</p>
+
+                        <h3 class="card-about__subtitle">Calidez y Hospitalidad</h3>
+                        <p class="card-about__paragraph">Pero lo más destacado de Córdoba es su gente. Los cordobeses
+                            son conocidos por su amabilidad y hospitalidad, haciendo que los visitantes se sientan
+                            bienvenidos en todo momento. La ciudad ofrece un ambiente acogedor y una calidad de vida
+                            excepcional que la convierte en un lugar especial para vivir y disfrutar.</p>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta derecha -->
+                <!-- Hago uso del ifram de Google Maps -->
+                <div class="card-about-4">
+                    <h2 class="card-about__header">Google <span class="txt-red">Maps</span></h2>
+                    <div class="card-about--flex">
+                        <p class="card-about__paragraph">En mi portafolio, incluiré un mapa interactivo de Google Maps
+                            para mostrar mi ubicación de residencia actual. Utilizando un iframe de Google Maps, los
+                            visitantes podrán visualizar fácilmente dónde me encuentro ubicado. Esta funcionalidad
+                            permite una experiencia interactiva y práctica para aquellos que desean conocer más sobre mí
+                            y mi entorno. Estoy emocionado de compartir mi ubicación y facilitar la comunicación a
+                            través de esta herramienta accesible y familiar.</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.0747141486527!2d-64.1637277215819!3d-31.433438445203723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2c68e84a245%3A0xb716503cecb42396!2sLa%20Coru%C3%B1a%201694%2C%20X5014%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1711408685359!5m2!1ses-419!2sar"
+                            width="650" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="google-map"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Elemento de posicion fija de contacto -->
+        <div class="whatsapp-fixed">
+            <a href="https://api.whatsapp.com/send/?phone=3512647957&text&type=phone_number&app_absent=0"
+                target="_blank"><img src="./../assets/img/whatsapp-logo.png" alt="Contacto con WhatsApp"></a>
+        </div>
+    </main>
+    <!-- Fin del main -->
+
+    <!-- Footer de la pagina -->
+    <footer>
+        <footer>
+            <!-- Barra que contiene los links a mis redes sociales -->
+            <div class="social-bar">
+                <!-- Lista de la barra -->
+                <ul class="social-bar__list">
+                    <!-- Link a Facebook -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.facebook.com/santy.nieto.7/" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/facebook-logo-png.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a Instagram -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.instagram.com/_santinieto/" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/instagram-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a GitHub -->
+                    <li class="social-bar__list__item">
+                        <a href="https://github.com/santinieto" class="social-bar__list__item__link" target="_blank">
+                            <img src="./../assets/img/github-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                    <!-- Link a LinkedIn -->
+                    <li class="social-bar__list__item">
+                        <a href="https://www.linkedin.com/in/santiago-nieto-29b43a10a/" class="social-bar__list__item__link"
+                            target="_blank">
+                            <img src="./../assets/img/linkedin-logo.png" alt="" class="social-bar__list__item__link__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Fin del footer de la pagina -->
+
+        <!-- Script de Bootstrap -->
+        <!-- Nos va a dar la funcionalidad a las cosas -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <!-- Link para usar iconos de Fontawesome -->
+        <script src="https://kit.fontawesome.com/8108aa3dd1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
