@@ -325,9 +325,9 @@ body {
 
 .card-about--flex {
     display: flex;
-    height: auto;
+    height: 90%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .card-about__subtitle {
@@ -695,7 +695,8 @@ body {
     color: var(--white);
 }
 
-.form__field {
+.form__field,
+.form__field--checks {
     background-color: var(--black);
     margin: 10px 0px 0px 0px;
     padding-top: 10px;
@@ -828,9 +829,12 @@ footer {
 /***************************************************************************/
 @media (max-width: 1023px) {
     /* MAIN - ABOUT */
+    /* Cambio el tipo de display para no generar espacios vacios innecesarios
+    ** en el sitio.
+    **/
     .grilla-about-2x2 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        display: flex;
+        flex-direction: column;
     }
     /* MAIN - PORTFOLIO */
     .project__data {
@@ -897,8 +901,8 @@ footer {
     }
     /* MAIN - PORTFOLIO */
     .project__img {
-        width: 50%;
-        height: 50%;
+        width: 60%;
+        height: 60%;
     }
     .project__data {
         width: 90%;
@@ -911,6 +915,32 @@ footer {
         display: block;
         text-align: center;
         margin: 5px auto;
+        width: 100%;
+    }
+    /* MAIN - SKILLS */
+    /* Oculto las lineas verticales y acomodo todo en una unica columna. */
+    .study {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vl {
+        height: 0;
+    }/* MAIN - CONTACT */
+    .grilla-contact-2x1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .form__field--checks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 10px;
+    }
+    .form__field--checks * {
+        margin: 0;
+        padding: 0;
         width: 100%;
     }
 }
