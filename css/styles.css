@@ -216,7 +216,7 @@ body {
 .banner__title-div {
     color: var(--white);
     position: absolute;
-    top: 25px;
+    top: 33px;
     left: 0;
     text-align: center;
     width: 100%;
@@ -226,7 +226,7 @@ body {
 /* El banner de las paginas va a contener la etiqueta h1 */
 /* La tiqueta h1 es unica por archivo html */
 .banner__title {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--white);
     text-shadow: var(--red) 1px 0 20px;
     font-family: 'Mont-Heavy';
@@ -702,6 +702,12 @@ body {
     padding-top: 10px;
 }
 
+.form__field-div {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
 .form-label-check {
     font-weight: bold;
     margin-bottom: 3px;
@@ -918,6 +924,10 @@ footer {
         width: 100%;
     }
     /* MAIN - SKILLS */
+    .studies__header,
+    .study__info {
+        text-align: center;
+    }
     /* Oculto las lineas verticales y acomodo todo en una unica columna. */
     .study {
         display: flex;
@@ -937,6 +947,9 @@ footer {
         align-items: center;
         text-align: center;
         row-gap: 10px;
+    }
+    .form__field-div {
+        flex-direction: column;
     }
     .form__field--checks * {
         margin: 0;
@@ -989,14 +1002,26 @@ footer {
 @media (max-width: 350px) {
     /* BANNER */
     .banner__title-div {
-        top: 35px;
+        top: 37px;
     }
     .banner__title {
-        font-size: 27px;
+        font-size: 22px;
     }
     /* MAIN - INDEX */
     .index__image {
         width: 50vw;
+    }
+    /* MAIN - PORTFOLIO */
+    .project__data__info p {
+        text-align: center;
+    }
+    /* FOOTER */
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    .social-bar {
+        width: 80%;
     }
 }
 
