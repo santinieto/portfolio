@@ -1,0 +1,19 @@
+// Mixins
+
+// Configuraciones para usar Flex
+@mixin flex-config($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Configuraciones para user Grids
+@mixin grid-config($columns, $rows, $areas: null){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    @if $areas != null {
+        grid-template-areas: $areas;
+    }
+}

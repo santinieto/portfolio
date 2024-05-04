@@ -1,0 +1,38 @@
+// UTILIDADES
+@import "./utilities/variables";
+@import "./utilities/loops";
+@import "./utilities/mixins";
+@import "./utilities/extends";
+
+// CONFIGURACIONES GENERALES
+@import "./utilities/globals";
+
+// HEADER
+@import "./components/header";
+
+// BANNER
+@import "./components/banner";
+
+// MAIN - INDEX
+@import "./pages/index";
+
+// MAIN - ABOUT
+@import "./pages/about";
+
+// MAIN - PORTFOLIO
+@import "./pages/portfolio";
+
+// MAIN - EXPERIENCE
+@import "./pages/experience";
+
+// MAIN - SKILLS
+@import "./pages/skills";
+
+// MAIN - CONTACT
+@import "./pages/contact";
+
+// FOOTER
+@import "./components/footer";
+
+// MEDIA QUERIES
+@import "./utilities/media-queries";

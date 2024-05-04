@@ -1,0 +1,91 @@
+.l10 {
+  width: calc(10 / 100%);
+}
+
+.l20 {
+  width: calc(20 / 100%);
+}
+
+.l30 {
+  width: calc(30 / 100%);
+}
+
+.l40 {
+  width: calc(40 / 100%);
+}
+
+.l50 {
+  width: calc(50 / 100%);
+}
+
+.l60 {
+  width: calc(60 / 100%);
+}
+
+.l70 {
+  width: calc(70 / 100%);
+}
+
+.l80 {
+  width: calc(80 / 100%);
+}
+
+.l90 {
+  width: calc(90 / 100%);
+}
+
+.l100 {
+  width: calc(100 / 100%);
+}
+
+.txt-white {
+  color: #d8e9f0;
+}
+
+.txt-gray {
+  color: #33425b;
+}
+
+.txt-red {
+  color: #f33535;
+}
+
+.txt-black {
+  color: #29252c;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-top {
+  text-align: top;
+}
+
+.txt-bottom {
+  text-align: bottom;
+}
+
+/***************************************************************************/
+/* CONFIGURACION UNIVERSAL */
+/***************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Mont-ExtraLight", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
