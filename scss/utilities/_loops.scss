@@ -3,7 +3,7 @@
 // Widths
 @each $width in (10,20,30,40,50,60,70,80,90,100) {
     .l#{$width}{
-        width: calc(#{$width} / 100%);
+        width: percentage($width / 100);
     }
 };
 
@@ -22,9 +22,16 @@ $colors: (
     }
 }
 
-// Definir un mapa para las justificaciones de textos
-@each $value in (left, center, right, top, bottom) {
-    .txt-#{$value} {
-        text-align: $value;
+// Definir un mapa para las configuraciones de textos
+@each $value in (left, center, right, top, bottom, bold) {
+    @if $value != bold {
+        .txt-#{$value} {
+            text-align: $value;
+        }
+    }
+    @else {
+        .txt-#{$value} {
+            font-weight: $value;
+        }
     }
 };
