@@ -8,6 +8,16 @@
 /* Media Query Mobile --> 320px - 767px */
 /***************************************************************************/
 @media (max-width: 767px) {
+    /* MAIN - INDEX */
+    .index__image__div {
+        .index__image {
+            width: 65vw;
+        }
+    }
+    .index__header,
+    .index__paragraph {
+        text-align: center;
+    }
 }
 
 /***************************************************************************/
@@ -23,6 +33,12 @@
 }
 
 @media (max-width: 350px) {
+    /* MAIN - INDEX */
+    .index__image__div {
+        .index__image {
+            width: 50vw;
+        }
+    }
     /* BANNER */
     .banner__title-div {
         top: 37px;
@@ -41,4 +57,11 @@
 }
 
 @media (max-width: 250px) {
+    /* MAIN - INDEX */
+    .index__image {
+        width: 50vw;
+    }
+    .index__header {
+        font-size: 1.2em;
+    }
 }

@@ -143,6 +143,56 @@ body {
 }
 
 /***************************************************************************/
+/* MAIN - INDEX */
+/***************************************************************************/
+/* Configuro la unica card que hay para que quede al centro de la pantalla */
+.index__image__div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.index__image__div .index__image {
+  width: 550px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px #f33535;
+  object-fit: cover;
+}
+
+.index__header, .index__header--left {
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.index__header--left {
+  text-align: left;
+}
+
+.index__paragraph, .index__paragraph--center {
+  margin: 15px 0px;
+  text-align: left;
+}
+
+.index__paragraph--center {
+  text-align: center;
+}
+
+/* Clase para modificar Bootstrap */
+.bs-mod__container {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 10px 30px;
+  width: auto;
+}
+.bs-mod__container p {
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+/***************************************************************************/
 /* FOOTER */
 /***************************************************************************/
 footer {
@@ -183,6 +233,17 @@ footer .social-bar__list__item__link__icon {
 /***************************************************************************/
 /* Media Query Mobile --> 320px - 767px */
 /***************************************************************************/
+@media (max-width: 767px) {
+  /* MAIN - INDEX */
+  .index__image__div .index__image {
+    width: 65vw;
+  }
+  .index__header, .index__header--left,
+  .index__paragraph,
+  .index__paragraph--center {
+    text-align: center;
+  }
+}
 /***************************************************************************/
 /* Media Query especifica para Bootstrap */
 /***************************************************************************/
@@ -190,6 +251,10 @@ footer .social-bar__list__item__link__icon {
 /* Media queries especiales de uso especifico */
 /***************************************************************************/
 @media (max-width: 350px) {
+  /* MAIN - INDEX */
+  .index__image__div .index__image {
+    width: 50vw;
+  }
   /* BANNER */
   .banner__title-div {
     top: 37px;
@@ -204,6 +269,15 @@ footer .social-bar__list__item__link__icon {
   }
   footer .social-bar {
     width: 80%;
+  }
+}
+@media (max-width: 250px) {
+  /* MAIN - INDEX */
+  .index__image {
+    width: 50vw;
+  }
+  .index__header, .index__header--left {
+    font-size: 1.2em;
   }
 }
 
