@@ -143,6 +143,41 @@ body {
 }
 
 /***************************************************************************/
+/* FOOTER */
+/***************************************************************************/
+footer {
+  background-color: #29252c; /* Defino un color para el fondo */
+  margin: 0; /* El header no tiene division con el borde de pantalla */
+  padding: 0; /* Los elementos dentro del header no tienen espaciado */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+  /* Barra con los iconos de redes sociales */
+  /* La uso tanto en el footer como en Index - Contact */
+}
+footer .social-bar {
+  padding: 5px 0px;
+}
+footer .social-bar__list {
+  padding: 5px 0px;
+  list-style: none;
+  text-align: center;
+}
+footer .social-bar__list__item {
+  margin: 0px 5px;
+  padding: 5px;
+  display: inline-block;
+}
+footer .social-bar__list__item__link {
+  text-decoration: none;
+}
+footer .social-bar__list__item__link__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 35%;
+}
+
+/***************************************************************************/
 /* Media Query Tablet --> 768px - 1023px */
 /***************************************************************************/
 /***************************************************************************/
@@ -161,6 +196,14 @@ body {
   }
   .banner__title-div .banner__title {
     font-size: 22px;
+  }
+  /* FOOTER */
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .social-bar {
+    width: 80%;
   }
 }
 
