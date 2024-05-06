@@ -105,6 +105,63 @@
 /* Body */
 body {
   font-family: "Mont-ExtraLight", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(./../assets/img/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner {
+  padding: 15px 0px;
+  margin: 0px 40px;
+  height: 100px;
+  position: relative;
+}
+.banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px #d8e9f0;
+}
+.banner__title-div {
+  color: #d8e9f0;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  /* El banner de las paginas va a contener la etiqueta h1 */
+  /* La tiqueta h1 es unica por archivo html */
+}
+.banner__title-div .banner__title {
+  font-size: 30px;
+  color: #d8e9f0;
+  text-shadow: #f33535 1px 0 20px;
+  font-family: "Mont-Heavy";
+}
+
+/***************************************************************************/
+/* Media Query Tablet --> 768px - 1023px */
+/***************************************************************************/
+/***************************************************************************/
+/* Media Query Mobile --> 320px - 767px */
+/***************************************************************************/
+/***************************************************************************/
+/* Media Query especifica para Bootstrap */
+/***************************************************************************/
+/***************************************************************************/
+/* Media queries especiales de uso especifico */
+/***************************************************************************/
+@media (max-width: 350px) {
+  /* BANNER */
+  .banner__title-div {
+    top: 37px;
+  }
+  .banner__title-div .banner__title {
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
