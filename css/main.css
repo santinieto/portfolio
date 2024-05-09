@@ -522,6 +522,109 @@ body {
 }
 
 /***************************************************************************/
+/* MAIN - SKILLS */
+/***************************************************************************/
+.grilla-skills-2x1 {
+  padding: 0 30px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.grilla-skills-2x1 .studies, .grilla-skills-2x1 .skills {
+  background-color: #29252c;
+  padding: 20px 50px;
+  /* margin: 0px 10px; */
+  color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.grilla-skills-2x1 .studies__header, .grilla-skills-2x1 .skills__header {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+.grilla-skills-2x1 .studies .study, .grilla-skills-2x1 .skills .study {
+  display: flex;
+  justify-content: space-between;
+  /* La informacion de cada estudio o certificado se muestra al lado
+  ** del circulo con numero.
+  ** Al div del numero le doy posicion relativa para poder agregar la
+  ** linea vertical
+  **/
+  /* La informacion de cada estudio o certificado se muestra al lado del
+  ** circulo con numero.
+  **/
+}
+.grilla-skills-2x1 .studies .study__number, .grilla-skills-2x1 .skills .study__number {
+  position: relative;
+  /* La linea vertical tiene posicion absoluta al medio de los circulos
+  ** con los numeros.
+  **/
+}
+.grilla-skills-2x1 .studies .study__number h3, .grilla-skills-2x1 .skills .study__number h3 {
+  background-color: #f33535;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grilla-skills-2x1 .studies .study__number .vl, .grilla-skills-2x1 .skills .study__number .vl {
+  border-left: 5px solid #f33535;
+  height: 98%;
+  position: absolute;
+  top: 50px;
+  left: 22px;
+}
+.grilla-skills-2x1 .studies .study__info, .grilla-skills-2x1 .skills .study__info {
+  text-align: start;
+  color: #d8e9f0;
+  padding: 0px 15px;
+}
+.grilla-skills-2x1 .studies .study__info p, .grilla-skills-2x1 .skills .study__info p {
+  margin: 10px 0px;
+}
+.grilla-skills-2x1 .skills {
+  /* La etiqueta y barra de cada skill ocupan el 100% del contenedor que
+  ** las aloja.
+  **/
+}
+.grilla-skills-2x1 .skills .skill {
+  /* La etiqueta sale al lado de la barra de skill */
+  /* La etique sale al lado de la barra de skill */
+}
+.grilla-skills-2x1 .skills .skill__name {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  padding-right: 15px;
+}
+.grilla-skills-2x1 .skills .skill__bar {
+  display: inline-block;
+  width: 70%;
+  border-top: none;
+  border-bottom: 2px solid #d8e9f0;
+  border-left: 2px solid #d8e9f0;
+  border-right: 2px solid #d8e9f0;
+  /* Le doy una altura minima a la barra llena de skill para que se
+  ** muestre en pantalla.
+  ** Si no pongo un min-height la barra no se muestra porque el div no
+  ** tiene contenido.
+  **/
+}
+.grilla-skills-2x1 .skills .skill__bar--fill {
+  background-color: #f33535;
+  min-height: 10px;
+}
+
+/***************************************************************************/
 /* FOOTER */
 /***************************************************************************/
 footer {
@@ -600,6 +703,16 @@ footer {
   .work-exp-div .work-exp-card__data__contact__btn {
     width: 100%;
   }
+  /* MAIN - SKILLS */
+  .grilla-skills-2x1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grilla-skills-2x1 .skills .skill__name h3 {
+    font-size: 20px;
+  }
+  .grilla-skills-2x1 .skills .skill__bar {
+    width: 65%;
+  }
 }
 /***************************************************************************/
 /* Media Query Mobile --> 320px - 767px */
@@ -631,6 +744,22 @@ footer {
     text-align: center;
     margin: 5px auto;
     width: 100%;
+  }
+  /* MAIN - SKILLS */
+  .grilla-skills-2x1 .studies__header, .grilla-skills-2x1 .skills__header {
+    text-align: center;
+  }
+  .grilla-skills-2x1 .studies .study, .grilla-skills-2x1 .skills .study {
+    /* Oculto las lineas verticales y acomodo todo en una unica columna. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grilla-skills-2x1 .studies .study__number .vl, .grilla-skills-2x1 .skills .study__number .vl {
+    height: 0;
+  }
+  .grilla-skills-2x1 .studies .study__info, .grilla-skills-2x1 .skills .study__info {
+    text-align: center;
   }
 }
 /***************************************************************************/
@@ -666,6 +795,16 @@ footer {
 /***************************************************************************/
 /* Media queries especiales de uso especifico */
 /***************************************************************************/
+@media (max-width: 1300px) {
+  /* MAIN - SKILLS */
+  .grilla-skills-2x1 .skills .skill__name {
+    width: 100%;
+    text-align: center;
+  }
+  .grilla-skills-2x1 .skills .skill__bar {
+    width: 100%;
+  }
+}
 @media (max-width: 350px) {
   /* MAIN - INDEX */
   .index__image__div .index__image {
