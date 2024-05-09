@@ -8,25 +8,26 @@ footer {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     overflow: hidden;
-    /* Barra con los iconos de redes sociales */
-    /* La uso tanto en el footer como en Index - Contact */
-    .social-bar {
+}
+
+/* Barra con los iconos de redes sociales */
+/* La uso tanto en el footer como en Index - Contact */
+.social-bar {
+    padding: 5px 0px;
+    &__list {
         padding: 5px 0px;
-        &__list {
-            padding: 5px 0px;
-            list-style: none;
-            text-align: center;
-            &__item {
-                margin: 0px 5px;
-                padding: 5px;
-                display: inline-block;
-                &__link {
-                    text-decoration: none;
-                    &__icon {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 35%;
-                    }
+        list-style: none;
+        text-align: center;
+        &__item {
+            margin: 0px 5px;
+            padding: 5px;
+            display: inline-block;
+            &__link {
+                text-decoration: none;
+                &__icon {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 35%;
                 }
             }
         }
