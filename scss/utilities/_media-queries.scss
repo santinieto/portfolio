@@ -59,6 +59,14 @@
             }
         }
     }
+    /* MAIN - CONTACT */
+    .grilla-contact-2x1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "contact-form" "contact-info"
+        ;
+    }
 }
 
 /***************************************************************************/
@@ -113,6 +121,32 @@
                 }
                 &__info {
                     text-align: center;
+                }
+            }
+        }
+    }
+    /* MAIN - CONTACT */
+    .grilla-contact-2x1 {
+        display: flex;
+        flex-direction: column;
+        .contact__form {
+            .form {
+                &__field {
+                    &--checks {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        row-gap: 10px;
+                        .form__field-div {
+                            flex-direction: column;
+                        }
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
