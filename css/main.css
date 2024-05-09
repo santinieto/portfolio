@@ -111,6 +111,108 @@ body {
   background-attachment: fixed;
 }
 
+/* Tarjetas basicas */
+.card-header {
+  text-align: center;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: var(--white);
+}
+
+.card-block,
+.card-inline {
+  background-color: var(--black);
+  padding: 30px;
+  margin: 0 20px;
+  color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.card-inline {
+  display: inline-block;
+}
+
+/***************************************************************************/
+/* HEADER (Para todos los HTML) */
+/* bs-mod hace referencia a que son clases modificadoras de Bootstrap */
+/* bs-mod: Bootstrap Modify */
+/***************************************************************************/
+.header .bs-mod__navbar {
+  background-color: #29252c;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px 20px;
+}
+.header .bs-mod__navbar-img-div a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.header .bs-mod__navbar-img-div a .bs-mod__navbar-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f33535;
+}
+.header .bs-mod__navbar .bs-mod__toggler {
+  border: 2px solid #f33535;
+}
+.header .bs-mod__navbar .bs-mod__toggler:focus {
+  border: 2px solid #f33535;
+  outline: none;
+}
+.header .bs-mod__navbar .bs-mod__toggler-icon {
+  background-image: url(./../assets/svg/menu-expand-svgrepo-com.svg);
+}
+.header .bs-mod__navbar-collapse {
+  flex-grow: 0;
+}
+.header .bs-mod__navbar-collapse form {
+  margin-right: 20px;
+}
+.header .bs-mod__navbar-collapse form .bs-mod__search-field {
+  background-color: #29252c;
+  border: none;
+  border-bottom: 2px solid #f33535;
+  border-radius: 0px;
+  color: #d8e9f0;
+  transition: none;
+  padding: 0px 10px;
+  width: 100%;
+}
+.header .bs-mod__navbar-collapse form .bs-mod__search-field:focus {
+  outline: none;
+}
+.header .bs-mod__navbar-collapse form .bs-mod__btn {
+  color: #f33535;
+  border-color: #f33535;
+}
+.header .bs-mod__navbar-collapse form .bs-mod__btn:hover {
+  border-color: #f33535;
+  background-color: #f33535;
+}
+.header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link {
+  color: #d8e9f0;
+  font-weight: bold;
+}
+.header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link:visited {
+  color: #d8e9f0;
+}
+.header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link:hover {
+  border-bottom: 2px solid #f33535;
+  font-size: 1em;
+  text-shadow: 0px 0px 17px #d8e9f0;
+}
+.header .bs-mod__active {
+  color: #d8e9f0;
+  text-shadow: 0px 0px 17px #d8e9f0;
+}
+
 .banner {
   padding: 15px 0px;
   margin: 0px 40px;
@@ -202,26 +304,27 @@ footer {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow: hidden;
-  /* Barra con los iconos de redes sociales */
-  /* La uso tanto en el footer como en Index - Contact */
 }
-footer .social-bar {
+
+/* Barra con los iconos de redes sociales */
+/* La uso tanto en el footer como en Index - Contact */
+.social-bar {
   padding: 5px 0px;
 }
-footer .social-bar__list {
+.social-bar__list {
   padding: 5px 0px;
   list-style: none;
   text-align: center;
 }
-footer .social-bar__list__item {
+.social-bar__list__item {
   margin: 0px 5px;
   padding: 5px;
   display: inline-block;
 }
-footer .social-bar__list__item__link {
+.social-bar__list__item__link {
   text-decoration: none;
 }
-footer .social-bar__list__item__link__icon {
+.social-bar__list__item__link__icon {
   width: 40px;
   height: 40px;
   border-radius: 35%;
@@ -247,6 +350,33 @@ footer .social-bar__list__item__link__icon {
 /***************************************************************************/
 /* Media Query especifica para Bootstrap */
 /***************************************************************************/
+@media (max-width: 991px) {
+  .header .bs-mod__navbar {
+    z-index: 1;
+  }
+  .header .bs-mod__navbar-collapse {
+    text-align: center;
+    position: absolute;
+    background-color: #29252c;
+    width: 100%;
+    top: 75px;
+    left: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .header .bs-mod__navbar-collapse form {
+    margin: 30px auto;
+    width: 50%;
+  }
+  .header .bs-mod__navbar .bs-mod__btn {
+    color: #f33535;
+    border-color: #f33535;
+  }
+  .header .bs-mod__navbar .bs-mod__btn:hover {
+    border-color: #f33535;
+    background-color: #f33535;
+  }
+}
 /***************************************************************************/
 /* Media queries especiales de uso especifico */
 /***************************************************************************/
