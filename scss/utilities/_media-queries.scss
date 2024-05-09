@@ -10,6 +10,12 @@
         display: flex;
         flex-direction: column;
     }
+    /* MAIN - PORTFOLIO */
+    .project {
+        &__data {
+            width: 90%;
+        }
+    }
 }
 
 /***************************************************************************/
@@ -25,6 +31,26 @@
     .index__header,
     .index__paragraph {
         text-align: center;
+    }
+    /* MAIN - PORTFOLIO */
+    .project {
+        &__img {
+            width: 60%;
+            height: 60%;
+        }
+        &__data {
+            width: 90%;
+            margin: 0;
+            &__btns {
+                flex-direction: column;
+                a {
+                    display: block;
+                    text-align: center;
+                    margin: 5px auto;
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -79,6 +105,16 @@
         top: 37px;
         .banner__title {
             font-size: 22px;
+        }
+    }
+    /* MAIN - PORTFOLIO */
+    .project {
+        &__data {
+            &__info {
+                p {
+                text-align: center;
+                }
+            }
         }
     }
     /* FOOTER */
