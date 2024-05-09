@@ -118,12 +118,12 @@ body {
   margin: 0px;
   padding-top: 10px;
   padding-bottom: 30px;
-  color: var(--white);
+  color: #d8e9f0;
 }
 
 .card-block,
 .card-inline {
-  background-color: var(--black);
+  background-color: #29252c;
   padding: 30px;
   margin: 0 20px;
   color: white;
@@ -293,15 +293,15 @@ body {
 
 /* Clase para modificar Bootstrap */
 .bs-mod__container {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #29252c;
+  color: #d8e9f0;
   border-radius: 30px;
   padding: 10px 30px;
   margin: 10px 30px;
   width: auto;
 }
 .bs-mod__container p {
-  border: 2px solid var(--red);
+  border: 2px solid #f33535;
   border-radius: 20px;
   padding: 15px;
   overflow: hidden;
@@ -470,7 +470,7 @@ body {
 }
 .work-exp-div .work-exp-card {
   background-color: #29252c;
-  color: var(--white);
+  color: #d8e9f0;
   font-size: 20px;
   margin-bottom: 10px;
   border-radius: 30px;
