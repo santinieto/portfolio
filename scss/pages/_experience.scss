@@ -1,0 +1,93 @@
+/***************************************************************************/
+/* MAIN - EXPERIENCE */
+/***************************************************************************/
+.work-exp-description {
+    background-color: $c-black;
+    padding: 30px;
+    margin: 0px 10px;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+    &__header {
+        &--red {
+            margin-bottom: 20px;
+            color: $c-red;
+        }
+    }
+}
+
+/* Las tarjetas de experiencias laborales van a quedar al lado de
+** la informacion */
+.work-exp-div {
+    display: inline-block;
+    overflow: hidden;
+    width: 66%;
+    /* Le doy formato a cada tarjeta de experiencia */
+    .work-exp-card {
+        background-color: $c-black;
+        color: var(--white);
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        padding-left: 20px;
+        &__img-div {
+            background-color: $c-black;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            margin-top: 10px;
+            padding: 40px 0px;
+            .work-exp-card-img__img {
+                width: 200px;
+                height: 200px;
+                border: 3px solid $c-red;
+                border-radius: 30px;
+                background-color: black;
+            }
+        }
+        &__data {
+            display: inline-block;
+            padding: 40px 20px;
+            width: 80%;
+            &__header {
+                padding: 0px 20px;
+                text-align: start;
+            }
+            &__dates {
+                text-align: start;
+                margin-top: 10px;
+                font-size: 20px;
+                padding: 0px 20px;
+            }
+            /* Alineo los elementos de la lista a la izquierda */
+            /* Con el padding, los bullets comienzan en la misma linea que el texto */
+            &__tasks {
+                margin-top: 10px;
+                padding: 0px 20px;
+                text-align: start;
+                &__list {
+                    padding: 0px 20px;
+                }
+            }
+            /* Quiero que el boton de contacto me quede a la derecha */
+            &__contact {
+                text-align: end;
+                margin: 20px 0px 0px 0px;
+                &__btn {
+                    color: $c-white;
+                    background-color: $c-red;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 20px;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border: 2px solid $c-red;
+                }
+            }
+        }
+    }
+}

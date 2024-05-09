@@ -430,6 +430,98 @@ body {
 }
 
 /***************************************************************************/
+/* MAIN - EXPERIENCE */
+/***************************************************************************/
+.work-exp-description {
+  background-color: #29252c;
+  padding: 30px;
+  margin: 0px 10px;
+  color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+}
+.work-exp-description__header--red {
+  margin-bottom: 20px;
+  color: #f33535;
+}
+
+/* Las tarjetas de experiencias laborales van a quedar al lado de
+** la informacion */
+.work-exp-div {
+  display: inline-block;
+  overflow: hidden;
+  width: 66%;
+  /* Le doy formato a cada tarjeta de experiencia */
+}
+.work-exp-div .work-exp-card {
+  background-color: #29252c;
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+.work-exp-div .work-exp-card__img-div {
+  background-color: #29252c;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-top: 10px;
+  padding: 40px 0px;
+}
+.work-exp-div .work-exp-card__img-div .work-exp-card-img__img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #f33535;
+  border-radius: 30px;
+  background-color: black;
+}
+.work-exp-div .work-exp-card__data {
+  display: inline-block;
+  padding: 40px 20px;
+  width: 80%;
+  /* Alineo los elementos de la lista a la izquierda */
+  /* Con el padding, los bullets comienzan en la misma linea que el texto */
+  /* Quiero que el boton de contacto me quede a la derecha */
+}
+.work-exp-div .work-exp-card__data__header {
+  padding: 0px 20px;
+  text-align: start;
+}
+.work-exp-div .work-exp-card__data__dates {
+  text-align: start;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.work-exp-div .work-exp-card__data__tasks {
+  margin-top: 10px;
+  padding: 0px 20px;
+  text-align: start;
+}
+.work-exp-div .work-exp-card__data__tasks__list {
+  padding: 0px 20px;
+}
+.work-exp-div .work-exp-card__data__contact {
+  text-align: end;
+  margin: 20px 0px 0px 0px;
+}
+.work-exp-div .work-exp-card__data__contact__btn {
+  color: #d8e9f0;
+  background-color: #f33535;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #f33535;
+}
+
+/***************************************************************************/
 /* FOOTER */
 /***************************************************************************/
 footer {
@@ -480,6 +572,33 @@ footer {
   /* MAIN - PORTFOLIO */
   .project__data {
     width: 90%;
+  }
+  /* MAIN - EXPERIENCE */
+  .work-exp-description {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .work-exp-div {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .work-exp-div .work-exp-card {
+    padding: 0;
+  }
+  .work-exp-div .work-exp-card__data {
+    padding: 20px 20px;
+    width: 100%;
+  }
+  .work-exp-div .work-exp-card__data__contact {
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .work-exp-div .work-exp-card__data__contact__btn {
+    width: 100%;
   }
 }
 /***************************************************************************/
