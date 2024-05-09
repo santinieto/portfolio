@@ -24,6 +24,33 @@
 /* Media Query especifica para Bootstrap */
 /***************************************************************************/
 @media (max-width: 991px) {
+    .header {
+        .bs-mod__navbar {
+            z-index: 1;
+            &-collapse {
+                text-align: center;
+                position: absolute;
+                background-color: $c-black;
+                width: 100%;
+                top: 75px;
+                left: 0px; 
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                form {
+                    margin: 30px auto;
+                    width: 50%;
+                }
+            }
+            .bs-mod__btn {
+                color: $c-red;
+                border-color: $c-red;
+                &:hover {
+                    border-color: $c-red;
+                    background-color: $c-red;
+                }
+            }
+        }
+    }
 }
 
 /***************************************************************************/
