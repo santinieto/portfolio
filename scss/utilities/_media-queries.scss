@@ -2,6 +2,14 @@
 /* Media Query Tablet --> 768px - 1023px */
 /***************************************************************************/
 @media (max-width: 1023px) {
+    /* MAIN - ABOUT */
+    /* Cambio el tipo de display para no generar espacios vacios innecesarios
+    ** en el sitio.
+    **/
+    .grilla-about-2x2 {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /***************************************************************************/

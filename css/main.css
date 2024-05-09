@@ -295,6 +295,73 @@ body {
 }
 
 /***************************************************************************/
+/* MAIN - ABOUT */
+/***************************************************************************/
+.grilla-about-2x2 {
+  padding: 0px 40px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.grilla-about-2x2 .card-about-1,
+.grilla-about-2x2 .card-about-2,
+.grilla-about-2x2 .card-about-3,
+.grilla-about-2x2 .card-about-4 {
+  background-color: #29252c;
+  padding: 30px;
+  margin: 0px 0px;
+  color: #d8e9f0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.grilla-about-2x2 .card-about-1 h2,
+.grilla-about-2x2 .card-about-2 h2,
+.grilla-about-2x2 .card-about-3 h2,
+.grilla-about-2x2 .card-about-4 h2 {
+  height: 5%;
+}
+.grilla-about-2x2 .card-about-1 .card-about__header,
+.grilla-about-2x2 .card-about-2 .card-about__header,
+.grilla-about-2x2 .card-about-3 .card-about__header,
+.grilla-about-2x2 .card-about-4 .card-about__header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.grilla-about-2x2 .card-about-1 .card-about--flex,
+.grilla-about-2x2 .card-about-2 .card-about--flex,
+.grilla-about-2x2 .card-about-3 .card-about--flex,
+.grilla-about-2x2 .card-about-4 .card-about--flex {
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.grilla-about-2x2 .card-about-1 .card-about__subtitle,
+.grilla-about-2x2 .card-about-2 .card-about__subtitle,
+.grilla-about-2x2 .card-about-3 .card-about__subtitle,
+.grilla-about-2x2 .card-about-4 .card-about__subtitle {
+  text-align: left;
+}
+.grilla-about-2x2 .card-about-1 .card-about__paragraph,
+.grilla-about-2x2 .card-about-2 .card-about__paragraph,
+.grilla-about-2x2 .card-about-3 .card-about__paragraph,
+.grilla-about-2x2 .card-about-4 .card-about__paragraph {
+  margin-bottom: 20px;
+}
+
+/* Le doy un formato a los bordes de los iframe */
+.youtube-video,
+.google-map {
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px #d8e9f0;
+  display: inline-block;
+  width: 100%;
+}
+
+/***************************************************************************/
 /* FOOTER */
 /***************************************************************************/
 footer {
@@ -333,6 +400,16 @@ footer {
 /***************************************************************************/
 /* Media Query Tablet --> 768px - 1023px */
 /***************************************************************************/
+@media (max-width: 1023px) {
+  /* MAIN - ABOUT */
+  /* Cambio el tipo de display para no generar espacios vacios innecesarios
+  ** en el sitio.
+  **/
+  .grilla-about-2x2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /***************************************************************************/
 /* Media Query Mobile --> 320px - 767px */
 /***************************************************************************/
