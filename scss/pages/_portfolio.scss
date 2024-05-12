@@ -66,6 +66,9 @@
                 padding: 8px 20px;
                 margin-left: 5px;
                 width: 50%;
+                
+                /* Agrego el sombreado al boton */
+                @include btn-fade(0.5s, $c-gray);
             }
         }
     }

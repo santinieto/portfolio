@@ -94,11 +94,8 @@
                     border: 2px solid $c-red;
                     border-radius: 15px;
                     
-                    /* Configuro lo que sucede en el boton cuando paso el cursor por encima */
-                    &:hover {
-                        cursor: pointer;
-                        box-shadow: 0px 0px 10px 5px $c-gray;
-                    }
+                    /* Agrego el sombreado al boton */
+                    @include btn-fade(0.5s, $c-gray);
                 }
             }
         }

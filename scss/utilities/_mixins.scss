@@ -17,3 +17,12 @@
         grid-template-areas: $areas;
     }
 }
+
+// Efecto para los botones
+@mixin btn-fade($duration: 0.3s, $color: $c-gray) {
+    transition: box-shadow $duration;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 5px $c-gray;
+    }
+}

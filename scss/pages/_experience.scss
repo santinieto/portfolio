@@ -98,6 +98,9 @@
                     font-size: 20px;
                     font-weight: bold;
                     border: 2px solid $c-red;
+                    
+                    /* Agrego el sombreado al boton */
+                    @include btn-fade(0.5s, $c-gray);
                 }
             }
         }
