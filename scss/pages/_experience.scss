@@ -11,7 +11,9 @@
     vertical-align: top;
     width: 30%;
     display: inline-block;
+    
     &__header {
+        
         &--red {
             margin-bottom: 20px;
             color: $c-red;
@@ -25,6 +27,7 @@
     display: inline-block;
     overflow: hidden;
     width: 66%;
+    
     /* Le doy formato a cada tarjeta de experiencia */
     .work-exp-card {
         background-color: $c-black;
@@ -33,6 +36,7 @@
         margin-bottom: 10px;
         border-radius: 30px;
         padding-left: 20px;
+        
         &__img-div {
             background-color: $c-black;
             display: inline-block;
@@ -40,6 +44,7 @@
             text-align: center;
             margin-top: 10px;
             padding: 40px 0px;
+            
             .work-exp-card-img__img {
                 width: 200px;
                 height: 200px;
@@ -48,34 +53,41 @@
                 background-color: black;
             }
         }
+        
         &__data {
             display: inline-block;
             padding: 40px 20px;
             width: 80%;
+            
             &__header {
                 padding: 0px 20px;
                 text-align: start;
             }
+            
             &__dates {
                 text-align: start;
                 margin-top: 10px;
                 font-size: 20px;
                 padding: 0px 20px;
             }
+            
             /* Alineo los elementos de la lista a la izquierda */
             /* Con el padding, los bullets comienzan en la misma linea que el texto */
             &__tasks {
                 margin-top: 10px;
                 padding: 0px 20px;
                 text-align: start;
+                
                 &__list {
                     padding: 0px 20px;
                 }
             }
+            
             /* Quiero que el boton de contacto me quede a la derecha */
             &__contact {
                 text-align: end;
                 margin: 20px 0px 0px 0px;
+                
                 &__btn {
                     color: $c-white;
                     background-color: $c-red;

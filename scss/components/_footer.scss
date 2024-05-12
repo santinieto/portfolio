@@ -14,16 +14,20 @@ footer {
 /* La uso tanto en el footer como en Index - Contact */
 .social-bar {
     padding: 5px 0px;
+    
     &__list {
         padding: 5px 0px;
         list-style: none;
         text-align: center;
+        
         &__item {
             margin: 0px 5px;
             padding: 5px;
             display: inline-block;
+            
             &__link {
                 text-decoration: none;
+                
                 &__icon {
                     width: 40px;
                     height: 40px;

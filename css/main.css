@@ -126,7 +126,7 @@ body {
   background-color: #29252c;
   padding: 30px;
   margin: 0 20px;
-  color: white;
+  color: #d8e9f0;
   border-radius: 30px;
   overflow: hidden;
   vertical-align: top;
@@ -161,8 +161,9 @@ body {
 }
 .header .bs-mod__navbar-img-div a {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   width: 100%;
 }
 .header .bs-mod__navbar-img-div a .bs-mod__navbar-img {
@@ -226,6 +227,9 @@ body {
   text-shadow: 0px 0px 17px #d8e9f0;
 }
 
+/***************************************************************************/
+/* BANNER PARA LAS PAGINAS */
+/***************************************************************************/
 .banner {
   padding: 15px 0px;
   margin: 0px 40px;
@@ -347,10 +351,11 @@ body {
 .grilla-about-2x2 .card-about-2 .card-about--flex,
 .grilla-about-2x2 .card-about-3 .card-about--flex,
 .grilla-about-2x2 .card-about-4 .card-about--flex {
-  display: flex;
   height: 90%;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: start;
 }
 .grilla-about-2x2 .card-about-1 .card-about__subtitle,
 .grilla-about-2x2 .card-about-2 .card-about__subtitle,
@@ -425,7 +430,9 @@ body {
 }
 .project__data__btns {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: normal;
   column-gap: 10px;
 }
 .project__data__btns a {
@@ -554,16 +561,21 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
 }
 .grilla-skills-2x1 .studies__header, .grilla-skills-2x1 .skills__header {
-  display: flex;
   height: 10vh;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .grilla-skills-2x1 .studies .study, .grilla-skills-2x1 .skills .study {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: normal;
   /* La informacion de cada estudio o certificado se muestra al lado
   ** del circulo con numero.
   ** Al div del numero le doy posicion relativa para poder agregar la
@@ -585,8 +597,9 @@ body {
   height: 50px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .grilla-skills-2x1 .studies .study__number .vl, .grilla-skills-2x1 .skills .study__number .vl {
   border-left: 5px solid #f33535;
@@ -658,13 +671,17 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: center;
   grid-area: contact-form;
+  /* Contenedor principal del formulario de contacto */
 }
 .grilla-contact-2x1 .contact__form .form, .grilla-contact-2x1 .contact__info .form {
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: normal;
   padding: 0px;
   width: 100%;
   color: #d8e9f0;
@@ -712,6 +729,9 @@ body {
 }
 .grilla-contact-2x1 .contact__form .form__field--checks .form__field-div, .grilla-contact-2x1 .contact__info .form__field--checks .form__field-div {
   display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
   column-gap: 10px;
   align-items: center;
 }
@@ -729,7 +749,7 @@ body {
   margin-top: 20px;
   border: 2px solid #f33535;
   border-radius: 15px;
-  /* Condfiguro lo que sucede en el boton cuando paso el cursor por encima */
+  /* Configuro lo que sucede en el boton cuando paso el cursor por encima */
 }
 .grilla-contact-2x1 .contact__form .form__field--submit-btn:hover, .grilla-contact-2x1 .contact__info .form__field--submit-btn:hover {
   cursor: pointer;
@@ -795,6 +815,8 @@ footer {
   .grilla-about-2x2 {
     display: flex;
     flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
   }
   /* MAIN - PORTFOLIO */
   .project__data {
@@ -832,7 +854,9 @@ footer {
   }
   /* MAIN - SKILLS */
   .grilla-skills-2x1 {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
   .grilla-skills-2x1 .skills .skill__name h3 {
     font-size: 20px;
@@ -842,6 +866,7 @@ footer {
   }
   /* MAIN - CONTACT */
   .grilla-contact-2x1 {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "contact-form" "contact-info";
@@ -886,6 +911,7 @@ footer {
     /* Oculto las lineas verticales y acomodo todo en una unica columna. */
     display: flex;
     flex-direction: column;
+    justify-content: normal;
     align-items: center;
   }
   .grilla-skills-2x1 .studies .study__number .vl, .grilla-skills-2x1 .skills .study__number .vl {
@@ -898,13 +924,16 @@ footer {
   .grilla-contact-2x1 {
     display: flex;
     flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
   }
   .grilla-contact-2x1 .contact__form .form__field--checks, .grilla-contact-2x1 .contact__info .form__field--checks {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     row-gap: 10px;
+    text-align: center;
   }
   .grilla-contact-2x1 .contact__form .form__field--checks .form__field-div, .grilla-contact-2x1 .contact__info .form__field--checks .form__field-div {
     flex-direction: column;
@@ -978,7 +1007,9 @@ footer {
   /* FOOTER */
   footer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: normal;
   }
   footer .social-bar {
     width: 80%;

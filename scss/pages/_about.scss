@@ -5,11 +5,10 @@
 .grilla-about-2x2 {
     padding: 0px 40px;
     margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    @include grid-config(2, 2);
     column-gap: 20px;
     row-gap: 10px;
+    
     .card-about-1,
     .card-about-2,
     .card-about-3,
@@ -20,22 +19,25 @@
         color: $c-white;
         border-radius: 30px;
         overflow: hidden;
+        
         h2{
             height: 5%;
         }
+        
         .card-about__header {
             margin-bottom: 30px;
             text-align: center;
         }
+        
         .card-about--flex {
-            display: flex;
             height: 90%;
-            flex-direction: column;
-            justify-content: space-around;
+            @include flex-config(column, space-around, start);
         }
+        
         .card-about__subtitle {
             text-align: left;
         }
+        
         .card-about__paragraph {
             margin-bottom: 20px;
         }

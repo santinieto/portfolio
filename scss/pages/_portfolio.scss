@@ -4,6 +4,7 @@
 .project {
     text-align: center;
     margin-bottom: 10px;
+    
     /* Con inline-block la imagen me queda al lado de los datos */
     &__img {
         display: inline-block;
@@ -11,6 +12,7 @@
         margin-bottom: 20px;
         width: 350px;
         height: 350px;
+        
         /* Fijo el tamaño de las imagenes para que queden todas iguales */
         img {
             width: 100%;
@@ -21,6 +23,7 @@
             background-color: $c-black;
         }
     }
+    
     /* Con inline-block la imagen me queda al lado de los datos */
     &__data {
         background-color: $c-black;
@@ -29,6 +32,7 @@
         margin-left: 20px;
         padding: 30px;
         width: 72.5%;
+        
         /* En particular para estas tarjetas fuerzo que el titulo se alinie
         ** al comienzo (izquierda para occidentales)
         **/
@@ -36,6 +40,7 @@
             text-align: start;
             color: $c-white;
         }
+        
         /* En particular para estas tarjetas fuerzo que el texto se alinie
         ** al comienzo (izquierda para occidentales)
         **/
@@ -44,11 +49,12 @@
             margin-top: 10px;
             font-size: 20px;
         }
+        
         /* Los botones quiero que queden a la derecha */
         &__btns {
-            display: flex;
-            justify-content: center;
+            @include flex-config(row, center, normal);
             column-gap: 10px;
+            
             a {
                 color: $c-white;
                 background-color: $c-red;
