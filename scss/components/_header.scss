@@ -5,17 +5,19 @@
 /* bs-mod: Bootstrap Modify */
 /***************************************************************************/
 .header {
+    
     .bs-mod__navbar {
         background-color: $c-black;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         padding: 10px 20px;
+        
         &-img-div {
+            
             a {
-                display: flex;
-                justify-content: center;
-                text-align: center;
+                @include flex-config(row, center, center);
                 width: 100%;
+                
                 .bs-mod__navbar-img {
                     width: 60px;
                     height: 60px;
@@ -25,20 +27,26 @@
                 }
             }
         }
+        
         .bs-mod__toggler {
             border: 2px solid $c-red;
+            
             &:focus {
                 border: 2px solid $c-red;
                 outline: none;
             }
+            
             &-icon {
                 background-image: url(./../assets/svg/menu-expand-svgrepo-com.svg);
             }
         }
+        
         &-collapse {
             flex-grow: 0;
+            
             form {
                 margin-right: 20px;
+                
                 .bs-mod__search-field {
                     background-color: $c-black;
                     border: none;
@@ -48,10 +56,12 @@
                     transition: none;
                     padding: 0px 10px;
                     width: 100%;
+                    
                     &:focus {
                         outline: none;
                     }
                 }
+                
                 .bs-mod__btn {
                     color: $c-red;
                     border-color: $c-red;
@@ -61,13 +71,17 @@
                     }
                 }
             }
+            
             .bs-mod__nav-item {
+                
                 .bs-mod__nav-link {
                     color: $c-white;
                     font-weight: bold;
+                    
                     &:visited {
                         color: $c-white;
                     }
+                    
                     &:hover {
                         border-bottom: 2px solid $c-red;
                         font-size: 1em;
@@ -77,6 +91,7 @@
             }
         }
     }
+    
     .bs-mod__active {
         color: $c-white;
         text-shadow: 0px 0px 17px $c-white;

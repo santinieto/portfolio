@@ -1,8 +1,12 @@
+/***************************************************************************/
+/* BANNER PARA LAS PAGINAS */
+/***************************************************************************/
 .banner {
     padding: 15px 0px;
     margin: 0px 40px;
     height: 100px;
     position: relative;
+    
     &__img {
         width: 100%;
         height: 100%;
@@ -10,6 +14,7 @@
         border-radius: 20px;
         box-shadow: 0px 0px 15px 0px $c-white;
     }
+    
     &__title-div {
         color: $c-white;
         position: absolute;
@@ -18,6 +23,7 @@
         text-align: center;
         width: 100%;
         height: 100%;
+        
         /* El banner de las paginas va a contener la etiqueta h1 */
         /* La tiqueta h1 es unica por archivo html */
         .banner__title {

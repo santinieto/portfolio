@@ -4,11 +4,10 @@
 .grilla-skills-2x1 {
     padding: 0 30px;
     margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    @include grid-config(2, 1);
     column-gap: 20px;
     row-gap: 10px;
+    
     .studies {
         background-color: $c-black;
         padding: 20px 50px;
@@ -16,17 +15,16 @@
         color: white;
         border-radius: 30px;
         overflow: hidden;
-        display: flex;
-        flex-direction: column;
+        @include flex-config(column, normal, normal);
+        
         &__header {
-            display: flex;
             height: 10vh;
-            align-items: center;
-            justify-content: center;
+            @include flex-config(row, center, center);
         }
+        
         .study {
-            display: flex;
-            justify-content: space-between;
+            @include flex-config(row, space-between, normal);
+            
             /* La informacion de cada estudio o certificado se muestra al lado
             ** del circulo con numero.
             ** Al div del numero le doy posicion relativa para poder agregar la
@@ -34,15 +32,15 @@
             **/
             &__number {
                 position: relative;
+                
                 h3 {
                     background-color: $c-red;
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-config(row, center, center);
                 }
+                
                 /* La linea vertical tiene posicion absoluta al medio de los circulos
                 ** con los numeros.
                 **/
@@ -61,21 +59,26 @@
                 text-align: start;
                 color: $c-white;
                 padding: 0px 15px;
+                
                 p {
                     margin: 10px 0px;
                 }
             }
         }
     }
+    
     .skills {
         @extend .studies;
+        
         &__header {
             @extend .studies__header;
         }
+        
         /* La etiqueta y barra de cada skill ocupan el 100% del contenedor que
         ** las aloja.
         **/
         .skill {
+            
             /* La etiqueta sale al lado de la barra de skill */
             &__name {
                 display: inline-block;
@@ -83,6 +86,7 @@
                 text-align: right;
                 padding-right: 15px;
             }
+            
             /* La etique sale al lado de la barra de skill */
             &__bar {
                 display: inline-block;
@@ -96,6 +100,7 @@
                 ** Si no pongo un min-height la barra no se muestra porque el div no
                 ** tiene contenido.
                 **/
+                
                 &--fill {
                     background-color: $c-red;
                     min-height: 10px;
