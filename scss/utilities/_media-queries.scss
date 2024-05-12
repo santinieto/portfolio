@@ -14,6 +14,9 @@
     .project {
         &__data {
             width: 90%;
+            &__header {
+                text-align: center;
+            }
         }
     }
     /* MAIN - EXPERIENCE */
@@ -140,11 +143,9 @@
                         row-gap: 10px;
                         .form__field-div {
                             flex-direction: column;
-                        }
-                        * {
-                            margin: 0;
-                            padding: 0;
-                            width: 100%;
+                            .form-label-check {
+                                margin: 0;
+                            }
                         }
                     }
                 }
@@ -194,6 +195,7 @@
     .grilla-skills-2x1 {
         .skills {
             .skill {
+                padding-bottom: 20px;
                 &__name {
                     width: 100%;
                     text-align: center;

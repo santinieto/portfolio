@@ -68,6 +68,7 @@
                     color: $c-white;
                 }
                 &--checks {
+                    padding-top: 20px;
                     .form__field-div {
                         display: flex;
                         column-gap: 10px;
@@ -102,6 +103,7 @@
         @extend .contact__form;
         grid-area: contact-info;
         &__header {
+            padding-top: 10px;
             text-align: left;
         }
         &__data {

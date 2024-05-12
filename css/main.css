@@ -707,6 +707,9 @@ body {
   outline: none;
   color: #d8e9f0;
 }
+.grilla-contact-2x1 .contact__form .form__field--checks, .grilla-contact-2x1 .contact__info .form__field--checks {
+  padding-top: 20px;
+}
 .grilla-contact-2x1 .contact__form .form__field--checks .form__field-div, .grilla-contact-2x1 .contact__info .form__field--checks .form__field-div {
   display: flex;
   column-gap: 10px;
@@ -736,6 +739,7 @@ body {
   grid-area: contact-info;
 }
 .grilla-contact-2x1 .contact__info__header {
+  padding-top: 10px;
   text-align: left;
 }
 .grilla-contact-2x1 .contact__info__data {
@@ -795,6 +799,9 @@ footer {
   /* MAIN - PORTFOLIO */
   .project__data {
     width: 90%;
+  }
+  .project__data__header {
+    text-align: center;
   }
   /* MAIN - EXPERIENCE */
   .work-exp-description {
@@ -902,10 +909,8 @@ footer {
   .grilla-contact-2x1 .contact__form .form__field--checks .form__field-div, .grilla-contact-2x1 .contact__info .form__field--checks .form__field-div {
     flex-direction: column;
   }
-  .grilla-contact-2x1 .contact__form .form__field--checks *, .grilla-contact-2x1 .contact__info .form__field--checks * {
+  .grilla-contact-2x1 .contact__form .form__field--checks .form__field-div .form-label-check, .grilla-contact-2x1 .contact__info .form__field--checks .form__field-div .form-label-check {
     margin: 0;
-    padding: 0;
-    width: 100%;
   }
 }
 /***************************************************************************/
@@ -943,6 +948,9 @@ footer {
 /***************************************************************************/
 @media (max-width: 1300px) {
   /* MAIN - SKILLS */
+  .grilla-skills-2x1 .skills .skill {
+    padding-bottom: 20px;
+  }
   .grilla-skills-2x1 .skills .skill__name {
     width: 100%;
     text-align: center;
