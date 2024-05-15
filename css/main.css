@@ -286,13 +286,6 @@ main section {
   height: 350px;
   object-fit: cover;
 }
-.index__image__div .index__image {
-  width: 550px;
-  height: 350px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 15px 0px #f33535;
-  object-fit: cover;
-}
 
 .index__header, .index__header--left {
   margin: 30px 0px;
@@ -907,7 +900,7 @@ footer {
 /***************************************************************************/
 @media (max-width: 767px) {
   /* MAIN - INDEX */
-  .index__image__div .index__image {
+  .index__image__div .sl-mod {
     width: 65vw;
   }
   .index__header, .index__header--left,
@@ -1020,7 +1013,7 @@ footer {
 }
 @media (max-width: 350px) {
   /* MAIN - INDEX */
-  .index__image__div .index__image {
+  .index__image__div .sl-mod {
     width: 50vw;
   }
   /* BANNER */
