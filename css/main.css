@@ -273,6 +273,19 @@ main section {
   text-align: center;
   margin-bottom: 20px;
 }
+.index__image__div .sl-mod {
+  width: 550px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px #f33535;
+  overflow: hidden;
+  margin: auto;
+}
+.index__image__div .sl-mod img {
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+}
 .index__image__div .index__image {
   width: 550px;
   height: 350px;

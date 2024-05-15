@@ -14,6 +14,9 @@
     <!-- Nota: Va antes que el link con mi hoja de estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+    <!-- Link con SwiffySlider -->
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     
     <!-- Link al archivo de SASS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -89,7 +92,23 @@
                 <div class="card-block">
                     <!-- Imagen del inicio -->
                     <div class="index__image__div">
-                        <img src="./assets/img/oficina.webp" alt="Imagen de oficina" class="index__image">
+                        
+                        <div class="swiffy-slider sl-mod">
+                            <ul class="slider-container">
+                                <li><img src="./assets/img/oficina-2.webp"></li>
+                                <li><img src="./assets/img/oficina-3.webp"></li>
+                                <li><img src="./assets/img/oficina-1.webp"></li>
+                            </ul>
+                        
+                            <button type="button" class="slider-nav"></button>
+                            <button type="button" class="slider-nav slider-nav-next"></button>
+                        
+                            <div class="slider-indicators">
+                                <button class="active"></button>
+                                <button></button>
+                                <button></button>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Contenido de texto del inicio -->
@@ -181,6 +200,9 @@
 
     <!-- Link para usar iconos de Fontawesome -->
     <script src="https://kit.fontawesome.com/8108aa3dd1.js" crossorigin="anonymous"></script>
+    
+    <!-- Link con SwiffySlider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 
 </body>
 
