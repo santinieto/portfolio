@@ -90,7 +90,7 @@
     .index__image__div {
         
         .sl-mod {
-            width: 65%;
+            width: 90%;
         }
     }
     
@@ -243,12 +243,12 @@
 
 @media (max-width: 350px) {
     /* MAIN - INDEX */
-    .index__image__div {
+    // .index__image__div {
         
-        .sl-mod {
-            width: 50%;
-        }
-    }
+    //     .sl-mod {
+    //         width: 50%;
+    //     }
+    // }
     /* BANNER */
     .banner__title-div {
         top: 37px;

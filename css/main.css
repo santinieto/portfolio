@@ -902,7 +902,7 @@ footer {
 @media (max-width: 767px) {
   /* MAIN - INDEX */
   .index__image__div .sl-mod {
-    width: 65%;
+    width: 90%;
   }
   .index__header, .index__header--left,
   .index__paragraph,
@@ -1014,9 +1014,6 @@ footer {
 }
 @media (max-width: 350px) {
   /* MAIN - INDEX */
-  .index__image__div .sl-mod {
-    width: 50%;
-  }
   /* BANNER */
   .banner__title-div {
     top: 37px;
