@@ -85,7 +85,7 @@
                 
                 /* Le doy estilo al boton de submit */
                 &--submit-btn {
-                    background-color: $c-red;
+                    background: linear-gradient(to left, $c-black 30%, $c-red);
                     width: 100%;
                     height: 50px;
                     font-size: 18px;
@@ -94,8 +94,14 @@
                     border: 2px solid $c-red;
                     border-radius: 15px;
                     
-                    /* Agrego el sombreado al boton */
-                    @include btn-fade(0.5s, $c-gray);
+                    /* Agrego una animacion al hover al boton */
+                    &:hover{
+                        animation-name: twinkle;
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                        animation-delay: 0s;
+                    }
                 }
             }
         }

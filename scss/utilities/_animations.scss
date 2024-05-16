@@ -1,0 +1,20 @@
+// ANIMACIONES
+
+/* Animacion para que titile el boton */
+@keyframes twinkle {
+    0% {
+        box-shadow: 0px 0px 10px 0px $c-gray;
+    }
+    10% {
+        box-shadow: 0px 0px 10px 5px $c-gray;
+    }
+    25% {
+        box-shadow: 0px 0px 10px 10px $c-gray;
+    }
+    50% {
+        box-shadow: 0px 0px 10px 5px $c-gray;
+    }
+    100% {
+        box-shadow: 0px 0px 10px 0px $c-gray;
+    }
+}
