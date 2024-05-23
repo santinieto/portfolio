@@ -232,6 +232,12 @@ main section {
   border-color: #f33535;
   background-color: #f33535;
 }
+.header .bs-mod__navbar-collapse .bs-mod__nav-item {
+  border-bottom: 2px solid transparent;
+  font-size: 1em;
+  text-shadow: none;
+  transition: border-bottom 0.2s, text-shadow 0.2s;
+}
 .header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link {
   color: #d8e9f0;
   font-weight: bold;
@@ -239,9 +245,8 @@ main section {
 .header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link:visited {
   color: #d8e9f0;
 }
-.header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link:hover {
+.header .bs-mod__navbar-collapse .bs-mod__nav-item:hover {
   border-bottom: 2px solid #f33535;
-  font-size: 1em;
   text-shadow: 0px 0px 17px #d8e9f0;
 }
 .header .bs-mod__active {
@@ -810,6 +815,38 @@ main section {
   margin: 20px 0px;
   text-align: left;
   color: #d8e9f0;
+}
+
+/***************************************************************************/
+/* ERROR - 404 */
+/***************************************************************************/
+.btn-404-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn-404-div .btn-404 {
+  background: linear-gradient(to left, #29252c 30%, #f33535);
+  width: 40%;
+  height: 180px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 150px;
+  /* Agrego una animacion al hover al boton */
+}
+.btn-404-div .btn-404 a {
+  color: #d8e9f0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+.btn-404-div .btn-404:hover {
+  animation-name: twinkle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
 }
 
 /***************************************************************************/
