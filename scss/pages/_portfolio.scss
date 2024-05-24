@@ -55,7 +55,8 @@
             @include flex-config(row, center, normal);
             column-gap: 10px;
             
-            a {
+            a,
+            .bs-mod__btn_modal {
                 color: $c-white;
                 background-color: $c-red;
                 border-radius: 20px;
@@ -71,5 +72,22 @@
                 @include btn-fade(0.5s, $c-gray);
             }
         }
+    }
+}
+
+.bs-mod__modal-content {
+    background-color: $c-black;
+    font-weight: bold;
+    
+    button {
+        background-color: $c-red;
+        border: none;
+        
+        &:hover {
+            background-color: $c-red;
+        }
+                
+        /* Agrego el sombreado al boton */
+        @include btn-fade(0.5s, $c-gray);
     }
 }

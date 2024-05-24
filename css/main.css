@@ -469,7 +469,8 @@ main section {
   align-items: normal;
   column-gap: 10px;
 }
-.project__data__btns a {
+.project__data__btns a,
+.project__data__btns .bs-mod__btn_modal {
   color: #d8e9f0;
   background-color: #f33535;
   border-radius: 20px;
@@ -483,7 +484,26 @@ main section {
   /* Agrego el sombreado al boton */
   transition: box-shadow 0.5s;
 }
-.project__data__btns a:hover {
+.project__data__btns a:hover,
+.project__data__btns .bs-mod__btn_modal:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px #33425b;
+}
+
+.bs-mod__modal-content {
+  background-color: #29252c;
+  font-weight: bold;
+}
+.bs-mod__modal-content button {
+  background-color: #f33535;
+  border: none;
+  /* Agrego el sombreado al boton */
+  transition: box-shadow 0.5s;
+}
+.bs-mod__modal-content button:hover {
+  background-color: #f33535;
+}
+.bs-mod__modal-content button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 5px #33425b;
 }
