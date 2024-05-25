@@ -56,8 +56,7 @@
         
         &__data {
             display: inline-block;
-            padding: 40px 20px;
-            width: 80%;
+            padding: 20px 10px;
             
             &__header {
                 padding: 0px 20px;
@@ -98,6 +97,8 @@
                     font-size: 20px;
                     font-weight: bold;
                     border: 2px solid $c-red;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
                     
                     /* Agrego el sombreado al boton */
                     @include btn-fade(0.5s, $c-gray);

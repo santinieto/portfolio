@@ -564,8 +564,7 @@ main section {
 }
 .work-exp-div .work-exp-card__data {
   display: inline-block;
-  padding: 40px 20px;
-  width: 80%;
+  padding: 20px 10px;
   /* Alineo los elementos de la lista a la izquierda */
   /* Con el padding, los bullets comienzan en la misma linea que el texto */
   /* Quiero que el boton de contacto me quede a la derecha */
@@ -602,6 +601,8 @@ main section {
   font-size: 20px;
   font-weight: bold;
   border: 2px solid #f33535;
+  margin-right: 20px;
+  margin-bottom: 10px;
   /* Agrego el sombreado al boton */
   transition: box-shadow 0.5s;
 }
