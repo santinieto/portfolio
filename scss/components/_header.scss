@@ -72,24 +72,28 @@
                 }
             }
             
-            .bs-mod__nav-item {
-                border-bottom: 2px solid transparent;
-                font-size: 1em;
-                text-shadow: none;
-                transition: border-bottom 0.2s, text-shadow 0.2s;
-                
-                .bs-mod__nav-link {
-                    color: $c-white;
-                    font-weight: bold;
+            ul {
+                @include flex-config(row, center, center);
+            
+                .bs-mod__nav-item {
+                    border-bottom: 2px solid transparent;
+                    font-size: 1em;
+                    text-shadow: none;
+                    transition: border-bottom 0.2s, text-shadow 0.2s;
                     
-                    &:visited {
+                    .bs-mod__nav-link {
                         color: $c-white;
+                        font-weight: bold;
+                        
+                        &:visited {
+                            color: $c-white;
+                        }
                     }
-                }
-                
-                &:hover {
-                    border-bottom: 2px solid $c-red;
-                    text-shadow: 0px 0px 17px $c-white;
+                    
+                    &:hover {
+                        border-bottom: 2px solid $c-red;
+                        text-shadow: 0px 0px 17px $c-white;
+                    }
                 }
             }
         }

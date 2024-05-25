@@ -201,6 +201,10 @@
                     margin: 30px auto;
                     width: 50%;
                 }
+            
+                ul {
+                    @include flex-config(column, center, center);
+                }
             }
             
             .bs-mod__btn {
