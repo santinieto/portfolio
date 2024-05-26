@@ -1,0 +1,31 @@
+/***************************************************************************/
+/* ERROR - 404 */
+/***************************************************************************/
+.btn-404-div {
+    @include flex-config(row, center, center);
+    
+    .btn-404 {
+        background: linear-gradient(to left, $c-black 30%, $c-red);
+        width: 40%;
+        height: 180px;
+        border: none;
+        border-radius: 20px;
+        margin-top: 150px;
+        
+        a{
+            color: $c-white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+        }
+                    
+        /* Agrego una animacion al hover al boton */
+        &:hover{
+            animation-name: twinkle;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+        }
+    }
+}

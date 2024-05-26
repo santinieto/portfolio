@@ -232,16 +232,27 @@ main section {
   border-color: #f33535;
   background-color: #f33535;
 }
-.header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link {
+.header .bs-mod__navbar-collapse ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .bs-mod__navbar-collapse ul .bs-mod__nav-item {
+  border-bottom: 2px solid transparent;
+  font-size: 1em;
+  text-shadow: none;
+  transition: border-bottom 0.2s, text-shadow 0.2s;
+}
+.header .bs-mod__navbar-collapse ul .bs-mod__nav-item .bs-mod__nav-link {
   color: #d8e9f0;
   font-weight: bold;
 }
-.header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link:visited {
+.header .bs-mod__navbar-collapse ul .bs-mod__nav-item .bs-mod__nav-link:visited {
   color: #d8e9f0;
 }
-.header .bs-mod__navbar-collapse .bs-mod__nav-item .bs-mod__nav-link:hover {
+.header .bs-mod__navbar-collapse ul .bs-mod__nav-item:hover {
   border-bottom: 2px solid #f33535;
-  font-size: 1em;
   text-shadow: 0px 0px 17px #d8e9f0;
 }
 .header .bs-mod__active {
@@ -333,11 +344,9 @@ main section {
   margin: 10px 30px;
   width: auto;
 }
-.bs-mod__container p {
-  border: 2px solid #f33535;
+.bs-mod__container .row div {
   border-radius: 20px;
   padding: 15px;
-  overflow: hidden;
 }
 
 /***************************************************************************/
@@ -413,22 +422,21 @@ main section {
 /***************************************************************************/
 .project {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   /* Con inline-block la imagen me queda al lado de los datos */
   /* Con inline-block la imagen me queda al lado de los datos */
 }
 .project__img {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 20px;
   width: 350px;
   height: 350px;
+  margin-bottom: 30px;
   /* Fijo el tamaño de las imagenes para que queden todas iguales */
 }
 .project__img img {
   width: 100%;
   height: 90%;
-  margin-top: 30px;
   border: 3px solid #f33535;
   border-radius: 30px;
   background-color: #29252c;
@@ -463,8 +471,10 @@ main section {
   justify-content: center;
   align-items: normal;
   column-gap: 10px;
+  margin-top: 30px;
 }
-.project__data__btns a {
+.project__data__btns a,
+.project__data__btns .bs-mod__btn_modal {
   color: #d8e9f0;
   background-color: #f33535;
   border-radius: 20px;
@@ -478,7 +488,31 @@ main section {
   /* Agrego el sombreado al boton */
   transition: box-shadow 0.5s;
 }
-.project__data__btns a:hover {
+.project__data__btns a:hover,
+.project__data__btns .bs-mod__btn_modal:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px #33425b;
+}
+.project__data__btns .bs-mod__btn_modal:active,
+.project__data__btns .bs-mod__btn_modal:focus {
+  border: none;
+  background-color: #f33535;
+}
+
+.bs-mod__modal-content {
+  background-color: #29252c;
+  font-weight: bold;
+}
+.bs-mod__modal-content button {
+  background-color: #f33535;
+  border: none;
+  /* Agrego el sombreado al boton */
+  transition: box-shadow 0.5s;
+}
+.bs-mod__modal-content button:hover {
+  background-color: #f33535;
+}
+.bs-mod__modal-content button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 5px #33425b;
 }
@@ -535,8 +569,7 @@ main section {
 }
 .work-exp-div .work-exp-card__data {
   display: inline-block;
-  padding: 40px 20px;
-  width: 80%;
+  padding: 20px 10px;
   /* Alineo los elementos de la lista a la izquierda */
   /* Con el padding, los bullets comienzan en la misma linea que el texto */
   /* Quiero que el boton de contacto me quede a la derecha */
@@ -563,7 +596,8 @@ main section {
   text-align: end;
   margin: 20px 0px 0px 0px;
 }
-.work-exp-div .work-exp-card__data__contact__btn {
+.work-exp-div .work-exp-card__data__contact__btn,
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal {
   color: #d8e9f0;
   background-color: #f33535;
   width: 150px;
@@ -573,10 +607,35 @@ main section {
   font-size: 20px;
   font-weight: bold;
   border: 2px solid #f33535;
+  margin-right: 20px;
+  margin-bottom: 10px;
   /* Agrego el sombreado al boton */
   transition: box-shadow 0.5s;
 }
-.work-exp-div .work-exp-card__data__contact__btn:hover {
+.work-exp-div .work-exp-card__data__contact__btn:hover,
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px #33425b;
+}
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal:active,
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal:focus {
+  background-color: #f33535;
+}
+
+.bs-mod__modal-content {
+  background-color: #29252c;
+  font-weight: bold;
+}
+.bs-mod__modal-content button {
+  background-color: #f33535;
+  border: none;
+  /* Agrego el sombreado al boton */
+  transition: box-shadow 0.5s;
+}
+.bs-mod__modal-content button:hover {
+  background-color: #f33535;
+}
+.bs-mod__modal-content button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 5px #33425b;
 }
@@ -668,13 +727,16 @@ main section {
 }
 .grilla-skills-2x1 .skills .skill__name {
   display: inline-block;
-  width: 25%;
+  width: 30%;
   text-align: right;
   padding-right: 15px;
 }
+.grilla-skills-2x1 .skills .skill__name h3 {
+  font-size: 18px;
+}
 .grilla-skills-2x1 .skills .skill__bar {
   display: inline-block;
-  width: 70%;
+  width: 65%;
   border-top: none;
   border-bottom: 2px solid #d8e9f0;
   border-left: 2px solid #d8e9f0;
@@ -813,6 +875,38 @@ main section {
 }
 
 /***************************************************************************/
+/* ERROR - 404 */
+/***************************************************************************/
+.btn-404-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn-404-div .btn-404 {
+  background: linear-gradient(to left, #29252c 30%, #f33535);
+  width: 40%;
+  height: 180px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 150px;
+  /* Agrego una animacion al hover al boton */
+}
+.btn-404-div .btn-404 a {
+  color: #d8e9f0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+.btn-404-div .btn-404:hover {
+  animation-name: twinkle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+/***************************************************************************/
 /* FOOTER */
 /***************************************************************************/
 footer {
@@ -893,7 +987,8 @@ footer {
     text-align: center;
     margin: 30px auto;
   }
-  .work-exp-div .work-exp-card__data__contact__btn {
+  .work-exp-div .work-exp-card__data__contact__btn,
+  .work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal {
     width: 100%;
   }
   /* MAIN - SKILLS */
@@ -929,6 +1024,9 @@ footer {
   .index__paragraph--center {
     text-align: center;
   }
+  .container-fluid .card-block h3 {
+    text-align: center;
+  }
   /* MAIN - PORTFOLIO */
   .project__img {
     width: 60%;
@@ -941,7 +1039,8 @@ footer {
   .project__data__btns {
     flex-direction: column;
   }
-  .project__data__btns a {
+  .project__data__btns a,
+  .project__data__btns .bs-mod__btn_modal {
     display: block;
     text-align: center;
     margin: 5px auto;
@@ -1006,6 +1105,12 @@ footer {
   .header .bs-mod__navbar-collapse form {
     margin: 30px auto;
     width: 50%;
+  }
+  .header .bs-mod__navbar-collapse ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .header .bs-mod__navbar .bs-mod__btn {
     color: #f33535;

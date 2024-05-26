@@ -56,8 +56,7 @@
         
         &__data {
             display: inline-block;
-            padding: 40px 20px;
-            width: 80%;
+            padding: 20px 10px;
             
             &__header {
                 padding: 0px 20px;
@@ -88,7 +87,8 @@
                 text-align: end;
                 margin: 20px 0px 0px 0px;
                 
-                &__btn {
+                &__btn,
+                .bs-mod__btn_modal {
                     color: $c-white;
                     background-color: $c-red;
                     width: 150px;
@@ -98,11 +98,35 @@
                     font-size: 20px;
                     font-weight: bold;
                     border: 2px solid $c-red;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
                     
                     /* Agrego el sombreado al boton */
                     @include btn-fade(0.5s, $c-gray);
                 }
+                
+                .bs-mod__btn_modal:active,
+                .bs-mod__btn_modal:focus {
+                    background-color: $c-red;
+                }
             }
         }
+    }
+}
+
+.bs-mod__modal-content {
+    background-color: $c-black;
+    font-weight: bold;
+    
+    button {
+        background-color: $c-red;
+        border: none;
+        
+        &:hover {
+            background-color: $c-red;
+        }
+                
+        /* Agrego el sombreado al boton */
+        @include btn-fade(0.5s, $c-gray);
     }
 }

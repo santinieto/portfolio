@@ -82,15 +82,19 @@
             /* La etiqueta sale al lado de la barra de skill */
             &__name {
                 display: inline-block;
-                width: 25%;
+                width: 30%;
                 text-align: right;
                 padding-right: 15px;
+                
+                h3 {
+                    font-size: 18px;
+                }
             }
             
             /* La etique sale al lado de la barra de skill */
             &__bar {
                 display: inline-block;
-                width: 70%;
+                width: 65%;
                 border-top: none;
                 border-bottom: 2px solid $c-white;
                 border-left: 2px solid $c-white;
