@@ -47,7 +47,8 @@
                     text-align: center;
                     margin: 30px auto;
                     
-                    &__btn {
+                    &__btn,
+                    .bs-mod__btn_modal {
                         width: 100%;
                     }
                 }
@@ -99,6 +100,14 @@
         text-align: center;
     }
     
+    .container-fluid {
+        .card-block {
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+    
     /* MAIN - PORTFOLIO */
     .project {
         
@@ -114,7 +123,8 @@
             &__btns {
                 flex-direction: column;
                 
-                a {
+                a,
+                .bs-mod__btn_modal {
                     display: block;
                     text-align: center;
                     margin: 5px auto;

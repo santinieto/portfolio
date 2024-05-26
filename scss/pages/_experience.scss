@@ -87,7 +87,8 @@
                 text-align: end;
                 margin: 20px 0px 0px 0px;
                 
-                &__btn {
+                &__btn,
+                .bs-mod__btn_modal {
                     color: $c-white;
                     background-color: $c-red;
                     width: 150px;

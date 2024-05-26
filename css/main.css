@@ -422,14 +422,13 @@ main section {
 /***************************************************************************/
 .project {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   /* Con inline-block la imagen me queda al lado de los datos */
   /* Con inline-block la imagen me queda al lado de los datos */
 }
 .project__img {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 20px;
   width: 350px;
   height: 350px;
   /* Fijo el tamaño de las imagenes para que queden todas iguales */
@@ -437,7 +436,6 @@ main section {
 .project__img img {
   width: 100%;
   height: 90%;
-  margin-top: 30px;
   border: 3px solid #f33535;
   border-radius: 30px;
   background-color: #29252c;
@@ -591,7 +589,8 @@ main section {
   text-align: end;
   margin: 20px 0px 0px 0px;
 }
-.work-exp-div .work-exp-card__data__contact__btn {
+.work-exp-div .work-exp-card__data__contact__btn,
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal {
   color: #d8e9f0;
   background-color: #f33535;
   width: 150px;
@@ -606,7 +605,8 @@ main section {
   /* Agrego el sombreado al boton */
   transition: box-shadow 0.5s;
 }
-.work-exp-div .work-exp-card__data__contact__btn:hover {
+.work-exp-div .work-exp-card__data__contact__btn:hover,
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 5px #33425b;
 }
@@ -955,7 +955,8 @@ footer {
     text-align: center;
     margin: 30px auto;
   }
-  .work-exp-div .work-exp-card__data__contact__btn {
+  .work-exp-div .work-exp-card__data__contact__btn,
+  .work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal {
     width: 100%;
   }
   /* MAIN - SKILLS */
@@ -991,6 +992,9 @@ footer {
   .index__paragraph--center {
     text-align: center;
   }
+  .container-fluid .card-block h3 {
+    text-align: center;
+  }
   /* MAIN - PORTFOLIO */
   .project__img {
     width: 60%;
@@ -1003,7 +1007,8 @@ footer {
   .project__data__btns {
     flex-direction: column;
   }
-  .project__data__btns a {
+  .project__data__btns a,
+  .project__data__btns .bs-mod__btn_modal {
     display: block;
     text-align: center;
     margin: 5px auto;

@@ -3,13 +3,12 @@
 /***************************************************************************/
 .project {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     
     /* Con inline-block la imagen me queda al lado de los datos */
     &__img {
         display: inline-block;
         vertical-align: top;
-        margin-bottom: 20px;
         width: 350px;
         height: 350px;
         
@@ -17,7 +16,6 @@
         img {
             width: 100%;
             height: 90%;
-            margin-top: 30px;
             border: 3px solid $c-red;
             border-radius: 30px;
             background-color: $c-black;
