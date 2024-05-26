@@ -431,6 +431,7 @@ main section {
   vertical-align: top;
   width: 350px;
   height: 350px;
+  margin-bottom: 30px;
   /* Fijo el tamaño de las imagenes para que queden todas iguales */
 }
 .project__img img {
@@ -470,6 +471,7 @@ main section {
   justify-content: center;
   align-items: normal;
   column-gap: 10px;
+  margin-top: 30px;
 }
 .project__data__btns a,
 .project__data__btns .bs-mod__btn_modal {
@@ -490,6 +492,11 @@ main section {
 .project__data__btns .bs-mod__btn_modal:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 5px #33425b;
+}
+.project__data__btns .bs-mod__btn_modal:active,
+.project__data__btns .bs-mod__btn_modal:focus {
+  border: none;
+  background-color: #f33535;
 }
 
 .bs-mod__modal-content {
@@ -610,6 +617,28 @@ main section {
   cursor: pointer;
   box-shadow: 0px 0px 10px 5px #33425b;
 }
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal:active,
+.work-exp-div .work-exp-card__data__contact .bs-mod__btn_modal:focus {
+  background-color: #f33535;
+}
+
+.bs-mod__modal-content {
+  background-color: #29252c;
+  font-weight: bold;
+}
+.bs-mod__modal-content button {
+  background-color: #f33535;
+  border: none;
+  /* Agrego el sombreado al boton */
+  transition: box-shadow 0.5s;
+}
+.bs-mod__modal-content button:hover {
+  background-color: #f33535;
+}
+.bs-mod__modal-content button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px #33425b;
+}
 
 /***************************************************************************/
 /* MAIN - SKILLS */
@@ -698,13 +727,16 @@ main section {
 }
 .grilla-skills-2x1 .skills .skill__name {
   display: inline-block;
-  width: 25%;
+  width: 30%;
   text-align: right;
   padding-right: 15px;
 }
+.grilla-skills-2x1 .skills .skill__name h3 {
+  font-size: 18px;
+}
 .grilla-skills-2x1 .skills .skill__bar {
   display: inline-block;
-  width: 70%;
+  width: 65%;
   border-top: none;
   border-bottom: 2px solid #d8e9f0;
   border-left: 2px solid #d8e9f0;

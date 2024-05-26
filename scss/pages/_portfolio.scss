@@ -11,6 +11,7 @@
         vertical-align: top;
         width: 350px;
         height: 350px;
+        margin-bottom: 30px;
         
         /* Fijo el tamaño de las imagenes para que queden todas iguales */
         img {
@@ -52,6 +53,7 @@
         &__btns {
             @include flex-config(row, center, normal);
             column-gap: 10px;
+            margin-top: 30px;
             
             a,
             .bs-mod__btn_modal {
@@ -68,6 +70,12 @@
                 
                 /* Agrego el sombreado al boton */
                 @include btn-fade(0.5s, $c-gray);
+            }
+                
+            .bs-mod__btn_modal:active,
+            .bs-mod__btn_modal:focus {
+                border: none;
+                background-color: $c-red;
             }
         }
     }
