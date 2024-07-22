@@ -780,12 +780,12 @@ main section {
   /* Contenedor principal del formulario de contacto */
 }
 .grilla-contact-2x1 .contact__form .form, .grilla-contact-2x1 .contact__info .form {
-  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: normal;
   padding: 0px;
+  height: 90%;
   width: 100%;
   color: #d8e9f0;
 }
