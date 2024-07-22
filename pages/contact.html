@@ -94,12 +94,12 @@
                     <h2 class="card-header txt-bold">Formulario de <span class="txt-red">Contacto</span></h2>
 
                     <!-- Formulario de contacto -->
-                    <form action="" class="form">
+                    <form class="form" action="https://formsubmit.co/santi.nieto@live.com" method="POST">
                         <!-- Campo: Nombre -->
                         <div class="form__field">
                             <label for="name" class="form-label txt-white">Nombre</label>
                             <input type="text" name="name" id="name" class="form__field--text txt-white"
-                                placeholder="Nombre completo" required>
+                                placeholder="Full name" required>
                         </div>
                         <!-- Campo: Correo electronico -->
                         <div class="form__field">
@@ -111,23 +111,24 @@
                         <div class="form__field">
                             <label for="age" class="form-label txt-white">Edad</label>
                             <input type="number" name="age" id="age" class="form__field--text txt-white"
-                                placeholder="99">
+                                placeholder="0">
                         </div>
                         <!-- Campo: Telefono -->
                         <div class="form__field">
                             <label for="phone" class="form-label txt-white">Teléfono</label>
                             <input type="tel" name="phone" id="phone" class="form__field--text txt-white"
-                                placeholder="11111111">
+                                placeholder="123456789">
                         </div>
                         <!-- Campo: Espacio para el mensaje -->
                         <div class="form__field">
                             <label for="message" class="form-label txt-white">Mensaje</label>
                             <textarea name="message" id="message" cols="30" rows="10"
-                                class="form__field--textarea txt-white" placeholder="Escriba su mensaje aqui"
+                                class="form__field--textarea txt-white" placeholder="Your message"
                                 required></textarea>
                         </div>
                         <!-- Campo: Terminos y condiciones -->
-                        <div class="form__field--checks txt-right">
+                        <!-- Por ahora no voy a necesitar esto -->
+                        <!-- <div class="form__field--checks txt-right">
                             <div class="form__field-div">
                                 <input type="checkbox" name="terms" id="terms" required>
                                 <label for="terms" class="form-label-check txt-white">Acepto los términos y
@@ -138,11 +139,19 @@
                                 <label for="privacy-pol" class="form-label-check txt-white">Acepto el acuerdo de
                                     privacidad</label>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- Boton de enviar o submit -->
                         <div class="form__field">
                             <input type="submit" value="Enviar" class="form__field--submit-btn txt-white">
                         </div>
+                        
+                        <!-- Localhost: http://127.0.0.1:5500/pages/contact.html -->
+                        <!-- Github: https://santinieto.github.io/portfolio/pages/contact.html -->
+                        <!-- InfinityFree: http://santiagonieto.infinityfreeapp.com/pages/contact.html -->
+                        <!-- 000WebHost: https://santiagonieto.000webhostapp.com/pages/contact.html -->
+                        
+                        <input type="hidden" name="_next" value="https://santinieto.github.io/portfolio/pages/contact.html">
+                        <input type="hidden" name="_captcha" value="false">
 
                     </form>
                 </div>

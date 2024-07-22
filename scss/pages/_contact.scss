@@ -21,9 +21,9 @@
         
         /* Contenedor principal del formulario de contacto */
         .form {
-            height: 90%;
             @include flex-config(column, space-between, normal);
             padding: 0px;
+            height: 90%;
             width: 100%;
             color: $c-white;
             
